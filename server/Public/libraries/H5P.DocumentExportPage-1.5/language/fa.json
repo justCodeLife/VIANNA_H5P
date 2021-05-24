@@ -1,0 +1,47 @@
+{
+  "semantics": [
+    {
+      "label": "شرح",
+      "description": "شرح صفحه استخراج.",
+      "default": "On this page you can choose to export your text, goals and goals assessments."
+    },
+    {
+      "label": "ایجاد برچسب دکمه سند",
+      "description": "متنی که نمایش داده می شود برای \"ایجاد سند\"-دکمه.",
+      "default": "ایجاد سند"
+    },
+    {
+      "label": "دکمه ثبت متن",
+      "description": "متنی که نمایش داده می شود برای \"ثبت\"-دکمه.",
+      "default": "Submit"
+    },
+    {
+      "label": "برچسب ارسال موفق",
+      "default": "Your report was submitted successfully!"
+    },
+    {
+      "label": "برچسب دکمه استخراج همه",
+      "description": "متنی که نمایش داده می شود برای \"متن انتخاب همه\"-دکمه.",
+      "default": "Select"
+    },
+    {
+      "label": "برچسب دکمه استخراج متن",
+      "description": "متنی که نمایش داده می شود برای \"استخراج متن\"-دکمه.",
+      "default": "Export"
+    },
+    {
+      "label": "برچسب متن کمکی",
+      "description": "برچسب برای نشان دادن اطلاعات مفید اضافی به کاربر.",
+      "default": "More information"
+    },
+    {
+      "label": "اطلاعات راهنمای اضافی را پر کنید",
+      "description": "Here you can fill in additional helpful information for the user."
+    },
+    {
+      "label": "ورودی مورد نیاز متن موجود نیست",
+      "description": "پیام خطایی که در صورت عدم پر شدن یک یا چند فیلد ورودی مورد نیاز ، نمایش داده می شود. pages با عنوان صفحات تحت تأثیر جایگزین خواهد شد.",
+      "default": "The following pages contain required fields that need to be filled in order to review or submit this document: @pages"
+    }
+  ]
+}

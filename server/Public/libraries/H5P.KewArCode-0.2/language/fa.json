@@ -1,0 +1,502 @@
+{
+  "semantics": [
+    {
+      "label": "نوع کد",
+      "description": "نوع کد را انتخاب کنید که می خواهید ایجاد کنید",
+      "options": [
+        {
+          "label": "مخاطب"
+        },
+        {
+          "label": "رویداد"
+        },
+        {
+          "label": "ایمیل"
+        },
+        {
+          "label": "H5P"
+        },
+        {
+          "label": "محل"
+        },
+        {
+          "label": "شماره تلفن"
+        },
+        {
+          "label": "SMS"
+        },
+        {
+          "label": "Text"
+        },
+        {
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "label": "مخاطب",
+      "fields": [
+        {
+          "label": "نام",
+          "placeholder": ""
+        },
+        {
+          "label": "سازمان",
+          "placeholder": ""
+        },
+        {
+          "label": "موقعیت",
+          "placeholder": ""
+        },
+        {
+          "label": "شماره تلفن",
+          "description": "شماره تلفن (لطفاً از قالب +12 345 67 890 + استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "ایمیل",
+          "description": "آدرس ایمیل",
+          "placeholder": ""
+        },
+        {
+          "label": "آدرس",
+          "fields": [
+            {
+              "label": "آدرس تمدید شده",
+              "description": "اطلاعات c / o و غیره",
+              "placeholder": ""
+            },
+            {
+              "label": "جاده",
+              "description": "خیابان شامل شماره خانه",
+              "placeholder": ""
+            },
+            {
+              "label": "محل",
+              "description": "نام شهر و غیره",
+              "placeholder": ""
+            },
+            {
+              "label": "منطقه",
+              "description": "ایالت ، منطقه و غیره",
+              "placeholder": ""
+            },
+            {
+              "label": "کد پستی",
+              "description": "کد پستی",
+              "placeholder": ""
+            },
+            {
+              "label": "زمین",
+              "description": "زمین",
+              "placeholder": ""
+            }
+          ]
+        },
+        {
+          "label": "وب سایت",
+          "description": "پیوند به وب سایت (muss mit https:// oder http:// anfangen)",
+          "placeholder": ""
+        },
+        {
+          "label": "توجه داشته باشید",
+          "description": "توجه داشته باشید",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "رویداد",
+      "fields": [
+        {
+          "label": "عنوان",
+          "description": "عنوان رویداد تقویم",
+          "placeholder": ""
+        },
+        {
+          "label": "رویداد یک روز کامل",
+          "description": "اگر رویداد تمام روز طول بکشد ، گزینه را انتخاب کنید"
+        },
+        {
+          "label": "تاریخ شروع",
+          "description": "تاریخ شروع رویداد (لطفاً از قالب YYYY / MM / DD استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "زمان شروع",
+          "description": "زمان شروع رویداد (لطفاً از قالب hh: mm استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "تاریخ پایان",
+          "description": "تاریخ پایان رویداد (لطفاً از قالب yyyy / mm / dd استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "زمان پایان",
+          "description": "زمانی که رویداد به پایان می رسد (لطفاً از قالب hh: mm استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "منطقه زمانی",
+          "description": "لطفاً منطقه زمانی را که باید رویداد در آن برگزار شود ، انتخاب کنید",
+          "options": [
+            {
+              "label": "UTC-12:00"
+            },
+            {
+              "label": "UTC-11:00"
+            },
+            {
+              "label": "UTC-10:00"
+            },
+            {
+              "label": "UTC-9:30"
+            },
+            {
+              "label": "UTC-9:00"
+            },
+            {
+              "label": "UTC-8:00"
+            },
+            {
+              "label": "UTC-7:00"
+            },
+            {
+              "label": "UTC-6:00"
+            },
+            {
+              "label": "UTC-5:00"
+            },
+            {
+              "label": "UTC-4:00"
+            },
+            {
+              "label": "UTC-3:30"
+            },
+            {
+              "label": "UTC-3:00"
+            },
+            {
+              "label": "UTC-2:00"
+            },
+            {
+              "label": "UTC-1:00"
+            },
+            {
+              "label": "UTC"
+            },
+            {
+              "label": "UTC+1:00"
+            },
+            {
+              "label": "UTC+2:00"
+            },
+            {
+              "label": "UTC+3:00"
+            },
+            {
+              "label": "UTC+3:30"
+            },
+            {
+              "label": "UTC+4:00"
+            },
+            {
+              "label": "UTC+4:30"
+            },
+            {
+              "label": "UTC+5:00"
+            },
+            {
+              "label": "UTC+5:30"
+            },
+            {
+              "label": "UTC+5:45"
+            },
+            {
+              "label": "UTC+6:00"
+            },
+            {
+              "label": "UTC+6:30"
+            },
+            {
+              "label": "UTC+7:00"
+            },
+            {
+              "label": "UTC+8:00"
+            },
+            {
+              "label": "UTC+9:00"
+            },
+            {
+              "label": "UTC+9:30"
+            },
+            {
+              "label": "UTC+10:00"
+            },
+            {
+              "label": "UTC+10:30"
+            },
+            {
+              "label": "UTC+11:00"
+            },
+            {
+              "label": "UTC+12:00"
+            },
+            {
+              "label": "UTC+12:45"
+            },
+            {
+              "label": "UTC+13:00"
+            },
+            {
+              "label": "UTC+14:00"
+            }
+          ]
+        },
+        {
+          "label": "تابستان",
+          "description": "اگر این رویداد به وقت تابستان اتفاق می افتد ، لطفاً گزینه را انتخاب کنید"
+        },
+        {
+          "label": "محل",
+          "description": "نام محل",
+          "placeholder": ""
+        },
+        {
+          "label": "شرح",
+          "description": "شرح واقعه",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "آدرس ایمیل",
+      "fields": [
+        {
+          "label": "آدرس ایمیل",
+          "description": "آدرس ایمیل",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "H5P-Inhalt",
+      "fields": [
+        {
+          "label": "H5P-Inhalt",
+          "description": "محتوای H5P برای نمایش"
+        }
+      ]
+    },
+    {
+      "label": "محل",
+      "fields": [
+        {
+          "label": "طول جغرافیایی",
+          "description": "طول جغرافیایی (لطفا از قالب 53.864462 استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "عرض جغرافیایی",
+          "description": "عرض جغرافیایی (لطفا از قالب 10.663792 استفاده کنید)",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "شماره تلفن",
+      "fields": [
+        {
+          "label": "شماره تلفن",
+          "description": "شماره تلفن, برای تماس گرفتن (لطفاً از قالب +12 345 67 890 + استفاده کنید)",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "SMS",
+      "fields": [
+        {
+          "label": "شماره تلفن",
+          "description": "شماره تلفن, برای آنها باید پیامی ارسال شود (لطفاً از قالب +12 345 67 890 استفاده کنید)",
+          "placeholder": ""
+        },
+        {
+          "label": "پیام",
+          "description": "پیام ارسال می شود",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "Text",
+      "fields": [
+        {
+          "label": "Text",
+          "description": "متن برای رمزگذاری",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "URL",
+      "fields": [
+        {
+          "label": "URL",
+          "description": "URL, که می خواهید به آن پیوند دهید (باید با https:// یا http:// شروع شود)",
+          "placeholder": ""
+        }
+      ]
+    },
+    {
+      "label": "نگرشهای رفتاری",
+      "description": "این گزینه ها نحوه کار با جزئیات را تعیین می کنند.",
+      "fields": [
+        {
+          "label": "رنگ کد"
+        },
+        {
+          "label": "رنگ پس زمینه"
+        },
+        {
+          "label": "حداکثر اندازه",
+          "description": "حداکثر اندازه کد در علامت گذاری CSS (اگر فقط یک عدد داده شود پیکسل به طور پیش فرض)"
+        },
+        {
+          "label": "جهت گیری افقی",
+          "description": "اگر حداکثر اندازه را تنظیم کرده اید ، تراز بندی افقی را تنظیم کنید",
+          "options": [
+            {
+              "label": "لینک ها"
+            },
+            {
+              "label": "متمرکز"
+            },
+            {
+              "label": "درست"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "رابط کاربر",
+      "fields": [
+        {
+          "label": "نشانی",
+          "default": "نشانی"
+        },
+        {
+          "label": "مخاطب",
+          "default": "مخاطب"
+        },
+        {
+          "label": "زمین",
+          "default": "زمین"
+        },
+        {
+          "label": "تاریخ پایان",
+          "default": "تاریخ پایان"
+        },
+        {
+          "label": "تاریخ شروع",
+          "default": "تاریخ شروع"
+        },
+        {
+          "label": "شرح",
+          "default": "شرح"
+        },
+        {
+          "label": "E-Mail",
+          "default": "E-Mail"
+        },
+        {
+          "label": "رویداد",
+          "default": "رویداد"
+        },
+        {
+          "label": "آدرس تمدید شده",
+          "default": "آدرس تمدید شده"
+        },
+        {
+          "label": "عرض جغرافیایی",
+          "default": "عرض جغرافیایی"
+        },
+        {
+          "label": "محل",
+          "default": "محل"
+        },
+        {
+          "label": "محل",
+          "default": "محل"
+        },
+        {
+          "label": "عرض جغرافیایی",
+          "default": "عرض جغرافیایی"
+        },
+        {
+          "label": "پیام",
+          "default": "پیام"
+        },
+        {
+          "label": "نام",
+          "default": "نام"
+        },
+        {
+          "label": "توجه داشته باشید",
+          "default": "توجه داشته باشید"
+        },
+        {
+          "label": "سازمان",
+          "default": "سازمان"
+        },
+        {
+          "label": "شماره تلفن",
+          "default": "شماره تلفن"
+        },
+        {
+          "label": "منطقه",
+          "default": "Region"
+        },
+        {
+          "label": "SMS",
+          "default": "SMS"
+        },
+        {
+          "label": "جاده",
+          "default": "جاده"
+        },
+        {
+          "label": "متن",
+          "default": "متن"
+        },
+        {
+          "label": "عنوان",
+          "default": "عنوان"
+        },
+        {
+          "label": "URL",
+          "default": "URL"
+        },
+        {
+          "label": "کد پستی",
+          "default": "کد پستی"
+        }
+      ]
+    },
+    {
+      "label": "ابزار خواندن (دسترسی)",
+      "fields": [
+        {
+          "label": "کد QR نمایش اطلاعات (متن برای خواندن ابزار / قابلیت دسترسی)",
+          "default": "کد QR نمایش اطلاعات"
+        },
+        {
+          "label": "پنهان کردن اطلاعات (متن برای خواندن ابزار / قابلیت دسترسی)",
+          "default": "پنهان کردن اطلاعات"
+        }
+      ]
+    }
+  ]
+}

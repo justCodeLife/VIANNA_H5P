@@ -1,0 +1,67 @@
+{
+  "semantics": [
+    {
+      "label": "شرح",
+      "description": "شرح صفحه اهداف.",
+      "default": "Insert the goals that you have chosen to work with."
+    },
+    {
+      "label": "متن تنظیم متن هدف",
+      "description": "متن برای نمایش روی دکمه برای ایجاد هدف جدید.",
+      "default": "Create a new goal"
+    },
+    {
+      "label": "تعیین برای یک هدف تعریف شده توسط کاربر",
+      "description": "متن برای نمایش به عنوان برچسب روی هدف که توسط کاربر ایجاد شده است.",
+      "default": "User defined goal"
+    },
+    {
+      "label": "هدف جایگزین را تعیین کنید",
+      "description": "متن برای نمایش به عنوان گزینه جایگزین هنگام ایجاد هدف جدید.",
+      "default": "Write here..."
+    },
+    {
+      "label": "متنی که تعداد اهداف اضافه شده را نشان می دهدا",
+      "default": "Goals added:",
+      "description": "این متن بعد از مقدار اهدافی که در حال حاضر ایجاد شده است دنبال خواهد شد ، به عنوان مثال: 'Goals added: 5' where 'Goals added:' این متن است"
+    },
+    {
+      "label": "دکمه متن \"تعیین هدف \".",
+      "default": "Specification"
+    },
+    {
+      "label": "دکمه متن \"حذف هدف\".",
+      "default": "Remove"
+    },
+    {
+      "label": "برچسب متن راهنما",
+      "description": "برای نمایش اطلاعات مفید اضافی به کاربر ، برچسب بزنید.",
+      "default": "More information"
+    },
+    {
+      "label": "اطلاعات راهنمای اضافی را پر کنید",
+      "description": "در اینجا می توانید اطلاعات مفید دیگری را برای کاربر پر کنید."
+    },
+    {
+      "label": "تأیید حذف هدف را پیدا کنید",
+      "fields": [
+        {
+          "label": "تایید حذف",
+          "default": "Confirm deletion"
+        },
+        {
+          "label": "پیام",
+          "default": "Are you sure you want to delete this goal?"
+        },
+        {
+          "label": "دکمه لغو را برچسب بزنید",
+          "default": "Cancel"
+        },
+        {
+          "label": "دکمه تأیید را برچسب بزنید",
+          "default": "Confirm"
+        }
+      ]
+    }
+  ]
+}

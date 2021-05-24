@@ -1,0 +1,23 @@
+{
+  "libraryStrings": {
+    "title": "ضبط صدا",
+    "recordAnswer": "ضبط",
+    "pause": "مکث",
+    "continue": "به علاوه",
+    "done": "جدا شدن",
+    "retry": "تنظیم مجدد به حالت پیش فرض",
+    "microphoneNotSupported": "دسترسی به میکروفون پشتیبانی نمی شود. اطمینان حاصل کنید که از مرورگری استفاده می کنید که از ضبط از میکروفون پشتیبانی می کند.",
+    "microphoneInaccessible": "میکروفون قابل دسترسی نیست. مطمئن شوید که میکروفون در مرورگر فعال شده است.",
+    "insecureNotAllowed": "در مرورگر خود نمی توانید به میکروفون دسترسی پیدا کنید زیرا این صفحه با HTTPS ارائه نمی شود. لطفاً با اپراتور وب سایت تماس گرفته و از HTTPS استفاده کنید.",
+    "statusReadyToRecord": "برای شروع ضبط ، دکمه ضبط را فشار دهید.",
+    "statusRecording": "رکورد ...",
+    "statusPaused": "ضبط مکث شد.",
+    "statusFinishedRecording": "به ضبط زیر گوش دهید.",
+    "downloadRecording": "برای استفاده از ضبط ، دکمه \"درج \" را فشار دهید.",
+    "retryDialogHeaderText": "تکرار ضبط؟",
+    "retryDialogBodyText": "اگر بر روی \"تکرار\" کلیک کنید ، ضبط فعلی از بین می رود.",
+    "retryDialogConfirmText": "برای تکرار",
+    "retryDialogCancelText": "سقط",
+    "statusCantCreateTheAudioFile": "فایل صوتی ایجاد نمی شود"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "semantics": [
+    {
+      "label": "شرح وظیفه",
+      "description": "توصیف کنید که کاربر چگونه باید کار را حل کند.",
+      "default": "Drag the words into the correct boxes"
+    },
+    {
+      "label": "متن",
+      "placeholder": "",
+      "description": "",
+      "important": {
+        "description": "<ul><li>کلمات قابل انعطاف با ستاره اضافه می شوند (*) در جلو و پشت کلمه / عبارت صحیح.</li><li>شما می توانید با استفاده از دو نقطه (:) جلوی نوک ، یک نکته متنی اضافه کنید.</li><li>برای هر جای خالی فقط یک کلمه صحیح وجود دارد.</li><li>شما می توانید بازخورد اضافه کنید تا پس از اتمام کار ، نمایش داده شود. Use '\\+' for correct and '\\-' for incorrect feedback.</li></ul>",
+        "example": "H5P content may be edited using a *browser:What type of program is Chrome?*. <br /> H5P content is *interactive\\+Correct! \\-Incorrect, try again!*"
+      }
+    },
+    {
+      "label": "بازخورد کلی",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "پیش فرض"
+            }
+          ],
+          "label": "بازخورد سفارشی را برای هر محدوده نمره تعریف کنید",
+          "description": "روی دکمه 'افزودن دامنه' کلیک کنید تا هر تعداد دامنه مورد نیاز خود اضافه کنید. مثال: 0-20٪ امتیاز بد ، 21-91٪ میانگین امتیاز ، 91-100٪ امتیاز عالی!",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "محدوده امتیاز"
+              },
+              {},
+              {
+                "label": "بازخورد برای دامنه نمره تعریف شده",
+                "placeholder": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "متن برای دکمه چک",
+      "default": "Check"
+    },
+    {
+      "label": "متن برای دکمه تلاش مجدد",
+      "default": "Retry"
+    },
+    {
+      "label": "متن برای دکمه نمایش راه حل",
+      "default": "Show solution"
+    },
+    {
+      "label": "شماره برچسب منطقه قطره",
+      "default": "Drop Zone @index.",
+      "description": "برچسبی برای دسترسی استفاده می شود ، جایی که بلندگو شاخص یک منطقه افت را می خواند. متغیر موجود: @index"
+    },
+    {
+      "label": "Empty Drop Zone label",
+      "default": "Drop Zone @index is empty.",
+      "description": "برچسبی برای دسترسی استفاده می شود ، جایی که بلندگو می خواند که منطقه افت خالی است"
+    },
+    {
+      "label": "حاوی برچسب Drop Zone است",
+      "default": "Drop Zone @index contains draggable @draggable.",
+      "description": "برچسبی برای دسترسی استفاده می شود ، جایی که بلندگو می خواند که منطقه رها کردن قابل جمع شدن است"
+    },
+    {
+      "label": "عناصر قابل جمع شدن",
+      "default": "@index of @count draggables.",
+      "description": "برچسب مورد استفاده برای دسترسی ، جایی که بلندگوی می خواند که این یک عنصر قابل کشیدن است. متغیر موجود: @index, @count"
+    },
+    {
+      "label": "برچسب دکمه نمایش نکات",
+      "default": "Show tip",
+      "description": "برچسب مورد استفاده برای دسترسی ، جایی که بلندگو آن را قبل از خواندن نکته بخواند"
+    },
+    {
+      "label": "متن خواننده برای پاسخ درست",
+      "default": "Correct!"
+    },
+    {
+      "label": "متن خواننده برای پاسخ نادرست",
+      "default": "Incorrect!"
+    },
+    {
+      "label": "عنوان گفتگوی تأیید که کاربر می خواهد یک قابل حمل را تنظیم کند",
+      "default": "Reset drop"
+    },
+    {
+      "label": "توضیحات گفتگوی تأیید که کاربر می خواهد یک قطره قابل شستشو را تنظیم کند",
+      "default": "Are you sure you want to reset this drop zone?"
+    },
+    {
+      "label": "برچسب مورد استفاده برای دسترسی ، جایی که بلندگوی خوانده نشان می دهد که کشیدن آغاز شده است",
+      "default": "Draggable is grabbed."
+    },
+    {
+      "label": "برچسب مورد استفاده برای دسترسی ، جایی که بلندگوی خوانده نشان می دهد که کشیدن لغو شده است",
+      "default": "Cancelled dragging."
+    },
+    {
+      "label": "برچسب مورد استفاده برای دسترسی ، جایی که گوینده خوانده نشان می دهد متن پاسخ صحیحی است",
+      "default": "Correct answer:"
+    },
+    {
+      "label": "سرصفحه پانل حاوی بازخورد برای پاسخهای صحیح / نادرست",
+      "default": "Feedback"
+    },
+    {
+      "label": "تنظیمات رفتاری",
+      "description": "این گزینه ها به شما امکان می دهد نحوه رفتار را کنترل کنید.",
+      "fields": [
+        {
+          "label": "فعالسازی \"تلاش مجدد\""
+        },
+        {
+          "label": "فعالسازی \"نمایش راه حل\" دکمه"
+        },
+        {
+          "label": "فعالسازی \"چک\" دکمه"
+        },
+        {
+          "label": "بازخورد فوری"
+        }
+      ]
+    },
+    {
+      "label": "نمایش متنی نوار امتیاز برای کسانی که از یک خواننده استفاده می کنند",
+      "default": "You got :num out of :total points"
+    },
+    {
+      "label": "برچسب فناوری کمکی برای \"چک\" دکمه",
+      "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+    },
+    {
+      "label": "برچسب فناوری کمکی برای \"نمایش راه حل\" دکمه",
+      "default": "Show the solution. The task will be marked with its correct solution."
+    },
+    {
+      "label": "برچسب فناوری کمکی برای \"تلاش مجدد\" دکمه",
+      "default": "Retry the task. Reset all responses and start the task over again."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "semantics": [
+    {
+      "label": "شرح ماموریت",
+      "placeholder": ""
+    },
+    {
+      "label": "پاسخ های پذیرفته شده",
+      "field": {
+        "label": "پاسخ قابل قبول"
+      }
+    },
+    {
+      "label": "متن پاسخ نادرست است",
+      "default": "پاسخ نادرست"
+    },
+    {
+      "label": "متن جواب درست",
+      "default": "پاسخ صحیح"
+    },
+    {
+      "label": "زبان گفتار را وارد کنید",
+      "options": [
+        {
+          "label": "فارسی (ایران)"
+        }
+      ]
+    },
+    {
+      "label": "کلمات با برچسب و متن صحبت می کنند",
+      "fields": [
+        {
+          "label": "لافتة زر \" دوباره امتحان کنید\"",
+          "default": "Retry"
+        },
+        {
+          "label": "لافتة زر \" راه حل را نشان دهید\"",
+          "default": "Show solution"
+        },
+        {
+          "label": "لافتة زر \" صحبت \"",
+          "default": "Push to speak"
+        },
+        {
+          "label": "لافتة الزر \"صحبت \" هنگام گوش دادن",
+          "default": "Listening..."
+        },
+        {
+          "label": "متن قبل از پاسخ های صحیح در حالت حل",
+          "default": "The correct answer(s):"
+        },
+        {
+          "label": "متن اطلاع رسانی به کاربر پسرش که از جواب وی تفسیر شده است:",
+          "default": "Your answer(s) was interpreted as:"
+        },
+        {
+          "label": "متنی که هنگام ضبط صدای هیچ کاربری نمایش داده می شود",
+          "default": "I could not hear you, make sure your microphone is enabled"
+        },
+        {
+          "label": "اگر مرورگر از تشخیص گفتار پشتیبانی نمی کند متن بنر نمایش داده می شود",
+          "default": "It looks like your browser does not support speech recognition"
+        },
+        {
+          "label": "اگر مرورگر از تشخیص گفتار پشتیبانی نمی کند متن اصلی نمایش داده می شود",
+          "default": "Please try again in a browser like Chrome"
+        },
+        {
+          "label": "شرح فن آوری کمکی برای \"نمایش راه حل\" دکمه",
+          "default": "Show the solution. The task will be marked with its correct solution."
+        },
+        {
+          "label": "شرح فن آوری کمکی برای \"تلاش مجدد\" دکمه",
+          "default": "Retry the task. Reset all responses and start the task over again."
+        }
+      ]
+    }
+  ]
+}

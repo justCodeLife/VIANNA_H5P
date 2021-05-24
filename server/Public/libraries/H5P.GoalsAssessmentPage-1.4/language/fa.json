@@ -1,0 +1,38 @@
+{
+  "semantics": [
+    {
+      "label": "شرح",
+      "description": "شرح صفحه ارزیابی هدف.",
+      "default": "Rate the goals that you have chosen in the goals page."
+    },
+    {
+      "label": "متن دارای رتبه بندی پایین",
+      "description": "متن بدترین امتیاز",
+      "default": "Learned little"
+    },
+    {
+      "label": "متن متوسط رتبه بندی",
+      "description": "متن دارای رتبه متوسط.",
+      "default": "Learned something"
+    },
+    {
+      "label": "متن رتبه بندی بالاتر",
+      "description": "متن برای طبقه بندی فوق العاده.",
+      "default": "Learned a lot"
+    },
+    {
+      "label": "متن هیچ هدفی وجود ندارد",
+      "description": "متن واکنش وقتی هیچ هدفی ایجاد نمی شود",
+      "default": "You have not chosen any goals yet."
+    },
+    {
+      "label": "برچسب متن راهنما",
+      "description": "برای نشان دادن اطلاعات مفید اضافی به کاربر ، برچسب بزنید.",
+      "default": "More information"
+    },
+    {
+      "label": "اطلاعات راهنمای اضافی را پر کنید",
+      "description": "در اینجا می توانید اطلاعات مفید دیگری را برای کاربر پر کنید."
+    }
+  ]
+}

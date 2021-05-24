@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "exceedsMin": "\":property\" از حداقل مقدار فراتر می رود :min.",
+    "fromBiggerThanTo": "\"من\" باید جلوتر باشد \"إلى\".",
+    "invalidTime": "\":property\" دارای قالب زمان نامعتبر است."
+  }
+}

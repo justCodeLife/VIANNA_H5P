@@ -1,0 +1,147 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="test\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="test\appsettings.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.InteractiveVideo-1.22\language\ar.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.InteractiveVideo-1.22\language\en.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.InteractiveVideo-1.22\language\fa.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.InteractiveVideo-1.22\library.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.InteractiveVideo-1.22\semantics.json" />
+      <_ContentIncludedByDefault Remove="Public\styles\ckeditor\samples\toolbarconfigurator\font\config.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\content\content.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\Drop-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\FontAwesome-4.5\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.FontIcons-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\af.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ar.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\bg.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\bs.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ca.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\cs.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\cy.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\da.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\de.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\el.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\es-mx.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\es.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\et.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\eu.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\fi.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\fr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\he.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\hu.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\it.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ja.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\km.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ko.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\nb.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\nl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\nn.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\pl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\pt-br.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\pt.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ro.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\ru.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\sl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\sma.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\sme.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\smj.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\sr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\sv.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\tr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\vi.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\zh-hans.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\language\zh-hant.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Image-1.1\semantics.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.JoubelUI-1.3\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\h5p.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Question-1.4\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.Transition-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\af.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ar.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\bg.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\bs.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ca.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\cs.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\da.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\de.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\el.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\es-mx.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\es.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\et.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\eu.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\fa.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\fi.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\fr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\he.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\hu.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\it.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ja.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\km.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ko.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\nb.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\nl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\nn.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\pl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\pt.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ro.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\ru.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sk.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sl.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sma.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sme.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\smj.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\sv.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\tr.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\uk.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\vi.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\zh-hans.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\language\zh-hant.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5P.TrueFalse-1.6\semantics.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5PEditor.RadioGroup-1.1\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\H5PEditor.ShowWhen-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\libraries\TrueFalse\Tether-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\scripts\editor\ckeditor\samples\toolbarconfigurator\font\config.json" />
+      <_ContentIncludedByDefault Remove="Public\scripts\ckeditor\samples\toolbarconfigurator\font\config.json" />
+      <_ContentIncludedByDefault Remove="Trash\4193072089\content.json" />
+      <_ContentIncludedByDefault Remove="Trash\4193072089\h5p.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\content\content.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.GreetingCard-1.0\language\fr.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.GreetingCard-1.0\language\nb.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.GreetingCard-1.0\library.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\H5P.GreetingCard-1.0\semantics.json" />
+      <_ContentIncludedByDefault Remove="Public\testpack\h5p.json" />
+      <_ContentIncludedByDefault Remove="fgj\2.json" />
+      <_ContentIncludedByDefault Remove="fgj\3.json" />
+      <_ContentIncludedByDefault Remove="fgj\ssd.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Cronos" Version="0.7.0" />
+      <PackageReference Include="Dapper" Version="2.0.90" />
+      <PackageReference Include="DotNetEnv" Version="2.1.1" />
+      <PackageReference Include="JsonDocumentPath" Version="1.0.2" />
+      <PackageReference Include="PersianDateTime.Core" Version="1.0.8" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.0" />
+      <PackageReference Include="Utf8Json" Version="1.3.7" />
+      <PackageReference Include="WebMarkupMin.Core" Version="2.9.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Public\h5ps" />
+      <Folder Include="Public\scripts\editor" />
+      <Folder Include="Public\styles\core" />
+      <Folder Include="Public\styles\editor" />
+      <Folder Include="Public\temp" />
+    </ItemGroup>
+
+</Project>

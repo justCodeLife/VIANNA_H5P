@@ -1,0 +1,155 @@
+{
+  "semantics": [
+    {
+      "label": "Türchen",
+      "entity": "Türchen",
+      "field": {
+        "fields": [
+          {
+            "label": "Bild für das Türchen",
+            "description": "تصویری که برای در استفاده شده است. در صورتی که نیمه چپ مطابق با نیمه راست باشد به نسبت ابعاد 1: 1 نیاز دارد."
+          },
+          {
+            "label": "تصویر پس زمینه",
+            "description": "تصویری که باید پشت در ظاهر شود. در صورت عدم وجود تصویر ، تعداد درب نمایش داده می شود."
+          },
+          {
+            "label": "نوع محتوا",
+            "description": "نوع محتوا که باید به صورت اختیاری هنگام باز شدن در ظاهر شود.",
+            "options": [
+              {
+                "label": "Tondatei"
+              },
+              {
+                "label": "عکس"
+              },
+              {
+                "label": "لینک"
+              },
+              {
+                "label": "متن"
+              },
+              {
+                "label": "ویدیو"
+              }
+            ]
+          },
+          {
+            "label": "Tondatei"
+          },
+          {
+            "label": "عکس"
+          },
+          {
+            "label": "لینک"
+          },
+          {
+            "label": "متن"
+          },
+          {
+            "label": "ویدیو"
+          },
+          {
+            "label": "بازی خودکار"
+          }
+        ]
+      },
+      "widgets": [
+        {
+          "label": "مشخصات"
+        }
+      ]
+    },
+    {
+      "label": "نگرشهای رفتاری",
+      "description": "این گزینه ها نحوه کار تقویم را با جزئیات تعیین می کنند.",
+      "fields": [
+        {
+          "label": "تصویر پس زمینه برای تقویم"
+        },
+        {
+          "label": "موسیقی پس زمینه"
+        },
+        {
+          "label": "موسیقی پس زمینه را به صورت خودکار پخش کنید",
+          "description": "در صورت انتخاب ، هنگام فراخوانی محتوا ، موسیقی پس زمینه به طور خودکار پخش می شود. توجه: قوانین برخی از مرورگرها ممکن است مانع از پخش خودکار شود."
+        },
+        {
+          "label": "Lass es schnei'n",
+          "description": "Fügt dem Kalender etwas Schnee hinzu. Es regnet nie in Südkalifornien, es schneit nicht auf dem IE11."
+        },
+        {
+          "label": "Vorlagebild für Türchen",
+          "description": "وقتی یک عکس تنظیم می شود ، از آن به عنوان پیش زمینه هر درب جداگانه ای استفاده می شود که هیچ عکس خاصی برای آن مشخص نشده است"
+        },
+        {
+          "label": "Verstecke den Rahmen der Türchen"
+        },
+        {
+          "label": "Verstecke die Nummern der Türchen"
+        },
+        {
+          "label": "Verstecke die Griffe der Türchen"
+        },
+        {
+          "label": "Verstecke Rand der Türchen"
+        },
+        {
+          "label": "Zufällige Reihenfolge",
+          "description": "Mische die Reihenfolge der Türchen. Falls die \"save content state\"-Option in den H5P-Einstellungen aktiviert wurde, bleibt die Reihenfolge erhalten, wenn Nutzer:innen später zurückkehren."
+        },
+        {
+          "label": "نظم تصویر را حفظ کنید",
+          "description": "Mische die Türchen, aber behalte deren Deckbilder an ihrer eigentlichen Position beginnend bei 1 in der Ecke links oben bis hinunter zur 24 in der Ecke rechts unten."
+        },
+        {
+          "label": "Designmodus",
+          "description": "وقتی حالت طراحی فعال است ، می توان همه درها را باز کرد. در غیر این صورت درها فقط در دسامبر در روز یا بعد از روز مربوط به شماره در باز می شوند"
+        }
+      ]
+    },
+    {
+      "label": "تعیین و برچسب ها",
+      "fields": [
+        {
+          "label": "چیزی برای دیدن نیست!",
+          "default": "Hier gibt es nichts zu sehen!"
+        },
+        {
+          "label": "ساختگی",
+          "default": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "دسترسی",
+      "fields": [
+        {
+          "label": "Türchen",
+          "default": "Türchen"
+        },
+        {
+          "label": "قفل شده",
+          "default": "قفل شده. Es ist noch nicht Zeit, das Türchen zu öffnen."
+        },
+        {
+          "description": "Verkünde den Inhalt. @door ist ein Platzhalter und wird durch die Beschreibung der Tür ersetzt.",
+          "label": "Inhalt von",
+          "default": "Inhalt von @door"
+        },
+        {
+          "label": "صدا را قطع کنید",
+          "default": "صدا را قطع کنید"
+        },
+        {
+          "label": "Ton einschalten",
+          "default": "Ton einschalten"
+        },
+        {
+          "label": "Fenster schließen",
+          "default": "Fenster schließen"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "distributeButtonLabel": "به طور مساوی توزیع کنید",
+    "distributeButtonWarning": "مقادیر برای همه دامنه ها تغییر خواهد کرد. آیا می خواهید ادامه دهید؟",
+    "rangeOutOfSequenceWarning": "دامنه نمره از توالی خارج است"
+  }
+}

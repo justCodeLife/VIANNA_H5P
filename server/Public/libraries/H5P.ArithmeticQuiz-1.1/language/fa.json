@@ -1,0 +1,135 @@
+{
+  "semantics": [
+    {
+      "label": "مقدمه",
+      "description": "متن مقدمه (حداکثر 100 حرف)"
+    },
+    {
+      "label": "نوع آزمون",
+      "options": [
+        {
+          "label": "آزمون عملیات ریاضی"
+        },
+        {
+          "label": "آزمون معادلات خطی"
+        }
+      ]
+    },
+    {
+      "label": "نوع حساب",
+      "options": [
+        {
+          "label": "جمع"
+        },
+        {
+          "label": "تفریق"
+        },
+        {
+          "label": "ضرب"
+        },
+        {
+          "label": "تقسیم"
+        }
+      ]
+    },
+    {
+      "label": "نوع معادله",
+      "options": [
+        {
+          "label": "پایه [ 3x = 12 ]"
+        },
+        {
+          "label": "متوسط [ 4x - 3 = 13 ]"
+        },
+        {
+          "label": "پیشرفته [ 5x + 3 = 3x + 15 ]"
+        }
+      ]
+    },
+    {
+      "label": "فعالسازی کسر ها",
+      "description": "Enable to allow fractions in equations."
+    },
+    {
+      "label": "حداکثر تعداد سوالات"
+    },
+    {
+      "label": "ترجمه رابط کاربر",
+      "fields": [
+        {
+          "label": "در طول آزمون ثبت نام کنید",
+          "default": "امتیاز:"
+        },
+        {
+          "label": "زمان",
+          "default": "زمان: @time"
+        },
+        {
+          "label": "سرصفحه صفحه نتیجه",
+          "default": "Finished!"
+        },
+        {
+          "label": "شروع",
+          "default": "GO!"
+        },
+        {
+          "label": "شروع",
+          "default": "Start"
+        },
+        {
+          "label": "تلاش مجدد",
+          "default": "Retry"
+        },
+        {
+          "label": "متن به گفتار برای پاسخ صحیح",
+          "default": "Correct"
+        },
+        {
+          "label": "متن به گفتار برای پاسخ اشتباه",
+          "default": "Incorrect. Correct answer was :num"
+        },
+        {
+          "label": "علامت نوشتار به گفتار برای تایمر",
+          "default": "Duration in hours, minutes and seconds."
+        },
+        {
+          "label": "متن به گفتار برای سوال ",
+          "default": "What does :arithmetic equal?"
+        },
+        {
+          "label": "متن خواننده برای سوال معادله",
+          "default": "For the equation :equation, what does :item equal?"
+        },
+        {
+          "label": "متن خواننده برای متغیر معادله",
+          "default": "What does :item equal?"
+        },
+        {
+          "label": "متن پارامتر +",
+          "default": "plus"
+        },
+        {
+          "label": "متن پارامتر -",
+          "default": "minus"
+        },
+        {
+          "label": "متن ضریب ضرب",
+          "default": "times"
+        },
+        {
+          "label": "متن به عنوان تقسیم رفتار می شود",
+          "default": "divided by"
+        },
+        {
+          "label": "متن علامت برابری",
+          "default": "equals"
+        },
+        {
+          "label": "متن شماره اسلاید",
+          "description": "تعلن عن الشريحة الحالية والعدد الإجمالي للشرائح ، والمتغيرات هي: num و: total",
+          "default": "Slide :num of :total"
+        }
+      ]
+    }
+  ]
+}

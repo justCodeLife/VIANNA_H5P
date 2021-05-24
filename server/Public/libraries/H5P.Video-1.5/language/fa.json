@@ -1,0 +1,136 @@
+{
+  "semantics": [
+    {
+      "label": "منابع ویدیویی",
+      "description": "\"MP4\"برای اطمینان از اینکه فیلم در همه مرورگرها کار می کند ، باید همه منابع وب و قالب را اضافه کنید"
+    },
+    {
+      "label": "تصویری",
+      "fields": [
+        {
+          "label": "پوستر"
+        },
+        {
+          "label": "پخش کننده فیلم راحت برای استفاده از تمام فضای موجود",
+          "description": "اگر هیچ پخش کننده ویدیویی تنظیم نشده باشد ، همان نسبت ویدئو را خواهد داشت"
+        },
+        {
+          "label": "کنترل های پخش کننده ویدیو را تماشا کنید",
+          "description": "کنترل ها را به پخش کننده ویدیو اضافه کنید. با این کار کاربران می توانند بازی ، مکث و ... کنند."
+        }
+      ]
+    },
+    {
+      "label": "در حال دویدن",
+      "fields": [
+        {
+          "label": "پخش خودکار ویدئو",
+          "description": "پخش ویدئو به صورت خودکار شروع می شود. ممکن است در دستگاه های تلفن همراه کار نکند"
+        },
+        {
+          "label": "پخش مداوم ویدئو",
+          "description": "پس از پایان فیلم ، آن را دوباره به طور خودکار شروع کنید"
+        }
+      ]
+    },
+    {
+      "label": "محلی سازی ویدئو",
+      "fields": [
+        {
+          "label": "نام",
+          "default": "Video",
+          "description": "این به تعریف محتوای این نوع کمک می کند"
+        },
+        {
+          "label": "دانلود",
+          "default": "Video player loading..."
+        },
+        {
+          "label": "هیچ پخش کننده ویدیویی وجود ندارد",
+          "default": "Found no video players that supports the given video format."
+        },
+        {
+          "label": "بدون منبع",
+          "default": "Video is missing sources."
+        },
+        {
+          "label": "پخش کننده متوقف شده است",
+          "default": "Media playback has been aborted."
+        },
+        {
+          "label": "مشکل شبکه",
+          "default": "Network failure."
+        },
+        {
+          "label": "منبع ویدیو قابل رمزگشایی نیست",
+          "default": "Unable to decode media."
+        },
+        {
+          "label": "فرمت ویدیو پشتیبانی نمی شود",
+          "default": "Video format not supported."
+        },
+        {
+          "label": "رسانه رمزگذاری شده است",
+          "default": "Media encrypted."
+        },
+        {
+          "label": "خطأ نامشخص",
+          "default": "Unknown error."
+        },
+        {
+          "label": "شناسه یوتیوب نامعتبر است",
+          "default": "Invalid YouTube ID."
+        },
+        {
+          "label": "ویدیو یوتیوب مورد نظر یافت نشد",
+          "default": "Unable to find video with the given YouTube ID."
+        },
+        {
+          "label": "ویدیو یوتیوب مورد نظر محدود شده است",
+          "default": "The owner of this video does not allow it to be embedded."
+        }
+      ]
+    },
+    {
+      "label": "دسترسی",
+      "fields": [
+        {
+          "label": "آهنگ ویدیویی اضافه کنید",
+          "entity": "Track",
+          "field": {
+            "label": "Track",
+            "fields": [
+              {
+                "label": "ردیابی"
+              },
+              {
+                "label": "اكتب النوع، ارجع إلى <a href=https://html.spec.whatwg.org/multipage/embedded-content.html#the-track-element>HTML living standard</a>",
+                "options": [
+                  {
+                    "label": "زیرنویس"
+                  },
+                  {
+                    "label": "زیرنویس"
+                  },
+                  {
+                    "label": "شرح"
+                  },
+                  {
+                    "label": "فصل ها"
+                  }
+                ]
+              },
+              {
+                "label": "(WebVTT)",
+                "description": "باید یک برچسب زبان معتبر BCP 47 باشد. اگر ویژگی kind روی زیرنویس تنظیم شده باشد ، srclang باید تعریف شود."
+              },
+              {
+                "label": "(WebVTT)"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "semantics": [
+    {
+      "label": "عنوان"
+    },
+    {
+      "label": "حالت",
+      "description": "نحوه ارائه کارتهای گفتگو",
+      "options": [
+        {
+          "label": "عادی"
+        },
+        {
+          "label": "تکرار"
+        }
+      ]
+    },
+    {
+      "label": "شرح فعالیت",
+      "default": ""
+    },
+    {
+      "widgets": [
+        {
+          "label": "پیش فرض"
+        }
+      ],
+      "label": "گفتگوها",
+      "entity": "گفتگو",
+      "field": {
+        "label": "سؤال",
+        "fields": [
+          {
+            "label": "متن",
+            "description": "اشاره ای برای قسمت اول گفتگو"
+          },
+          {
+            "label": "جواب",
+            "description": "اشاره ای برای قسمت دوم گفتگو"
+          },
+          {
+            "label": "تصویر",
+            "description": "تصویر اختیاری برای کارت. (کارت ممکن است فقط از یک تصویر ، فقط از یک متن یا هر دو استفاده کند)"
+          },
+          {
+            "label": "متن جایگزین برای تصویر"
+          },
+          {
+            "label": "فایل های صوتی"
+          },
+          {
+            "label": "نکات",
+            "fields": [
+              {
+                "label": "نکته متن",
+                "description": "نکته برای قسمت اول گفتگو"
+              },
+              {
+                "label": "نکته جواب",
+                "description": "نکته برای قسمت دوم گفتگو"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "تنظمیات رفتاری",
+      "description": "این گزینه ها به شما امکان می دهد نحوه رفتار را کنترل کنید.",
+      "fields": [
+        {
+          "label": "فعالسازی \"تلاش مجدد\" دکمه"
+        },
+        {
+          "label": "پیمایش به عقب را غیرفعال کنید",
+          "description": "این گزینه فقط به شما امکان می دهد تا با کارتهای گفتگوی پیش بروید"
+        },
+        {
+          "label": "متن را مقیاس بندی کنید تا درون کارت قرار بگیرد",
+          "description": "برداشتن علامت این گزینه باعث می شود کارت اندازه خود را با اندازه متن تطبیق دهد"
+        },
+        {
+          "label": "کارتها را تصادفی کنید",
+          "description": "فعال کردن ترتیب کارت های نمایش داده شده به صورت تصادفی."
+        },
+        {
+          "label": "حداکثر سطح مهارت"
+        },
+        {
+          "label": "پیشرفت سریع را مجاز کنید",
+          "description": "در صورت فعال شدن ، فراگیران می توانند بدون اینکه کارت را برگردانند ، مشخص کنند که آنها می دانند"
+        }
+      ]
+    },
+    {
+      "label": "متن دکمه را بچرخانید",
+      "default": "Turn"
+    },
+    {
+      "label": "متن دکمه بعدی",
+      "default": "Next"
+    },
+    {
+      "label": "متن دکمه قبلی",
+      "default": "Previous"
+    },
+    {
+      "label": "متن دکمه Retry",
+      "default": "Retry"
+    },
+    {
+      "label": "متن دکمه پاسخ درست",
+      "default": "I got it right!"
+    },
+    {
+      "label": "متن دکمه پاسخ اشتباه",
+      "default": "I got it wrong"
+    },
+    {
+      "label": "متن برای نمایش پیام راند در زیر کارت ها و در صفحه خلاصه ها",
+      "description": "@round با شماره دور کنونی جایگزین می شود",
+      "default": "Round @round"
+    },
+    {
+      "label": "متن پیام کارت های باقی مانده",
+      "description": "@number با شماره کارت های باقی مانده در این دور جایگزین می شود",
+      "default": "Cards left: @number"
+    },
+    {
+      "label": "متن دکمه دور بعدی",
+      "description": "@round با شماره دور جایگزین خواهد شد",
+      "default": "Proceed to round @round"
+    },
+    {
+      "label": "متن دکمه شروع مجدد",
+      "default": "Start over"
+    },
+    {
+      "label": "عنوان دکمه نمایش خلاصه",
+      "default": "Next"
+    },
+    {
+      "label": "عنوان صفحه خلاصه",
+      "default": "Summary"
+    },
+    {
+      "label": "متن برای کارت های درست",
+      "default": "Cards you got right:"
+    },
+    {
+      "label": "متن برای کارت های اشتباه",
+      "default": "Cards you got wrong:"
+    },
+    {
+      "label": "متن برای کارت های نمایش داده نشده",
+      "default": "Cards in pool not shown:"
+    },
+    {
+      "label": "متن برای نمره کل",
+      "default": "Overall Score"
+    },
+    {
+      "label": "متن برای کارت های کامل شده",
+      "default": "Cards you have completed learning:"
+    },
+    {
+      "label": "متن برای 'دورهای تکمیل شده:'",
+      "default": "Completed rounds:"
+    },
+    {
+      "label": "وقتی همه کارت ها به طور ماهرانه آموخته شده اند ، پیام دهید",
+      "description": "@cards با تعداد کارتهای موجود در استخر جایگزین خواهد شد. @max با حداکثر سطح مهارت جایگزین خواهد شد - 1.",
+      "default": "Well done! You got all @cards cards correct @max times in a row!"
+    },
+    {
+      "label": "پیشرفت متن",
+      "description": "متغیرهای موجود Card و Sum هستند",
+      "default": "Card @card of @total"
+    },
+    {
+      "label": "برچسب متن کارت",
+      "description": "برای دسترسی به فناوری های کمکی استفاده می شود",
+      "default": "Card front"
+    },
+    {
+      "label": "برچسب پشت کارت",
+      "description": "برای دسترسی به فناوری های کمکی استفاده می شود",
+      "default": "Card back"
+    },
+    {
+      "label": "برچسب دکمه نمایش نکات",
+      "default": "Show tip"
+    },
+    {
+      "label": "پیام 'صوت پشتیبانی نمی شود'",
+      "default": "Your browser does not support this audio"
+    },
+    {
+      "label": "دیالوگ تایید شروع",
+      "fields": [
+        {
+          "label": "متن سربرگ",
+          "default": "Start over?"
+        },
+        {
+          "label": "متن بدنه",
+          "default": "All progress will be lost. Are you sure you want to start over?"
+        },
+        {
+          "label": "برچسب دکمه لغو",
+          "default": "Cancel"
+        },
+        {
+          "label": "برچسب دکمه تایید",
+          "default": "Start over"
+        }
+      ]
+    }
+  ]
+}

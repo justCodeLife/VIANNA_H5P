@@ -1,0 +1,90 @@
+{
+  "semantics": [
+    {
+      "label":"شرح ماموریت",
+      "description":"متن اختیاری برای نمایش از طریق ضبط کننده صدا"
+    },
+    {
+      "label":"سایت",
+      "fields":[
+        {
+          "label":"ضبط",
+          "default":"Record"
+        },
+        {
+          "label":"توقف",
+          "default":"Pause"
+        },
+        {
+          "label": "ادامه",
+          "default": "Continue"
+        },
+        {
+          "label":"دانلود",
+          "default":"Download"
+        },
+        {
+          "label":"تایید",
+          "default":"Done"
+        },
+        {
+          "label":"تلاش مجدد",
+          "default":"Retry"
+        },
+        {
+          "label":"پیام خطای میکروفون پشتیبانی نمی شود",
+          "default":"Microphone not supported. Make sure you are using a browser that allows microphone recording."
+        },
+        {
+          "label":"دسترسی به پیام خطای میکروفون امکان پذیر نیست",
+          "default":"Microphone is not accessible. Make sure that the browser microphone is enabled."
+        },
+        {
+          "label":"پیامی که در صورت عدم اجازه دسترسی ناامن نمایش داده می شود",
+          "description":"برخی از مرورگرها اجازه استفاده از میکروفون هنگام مشاهده صفحه با استفاده از HTTP را نمی دهند. در این صورت این پیام نمایش داده می شود",
+          "default":"Access to microphone is not allowed in your browser since this page is not served using HTTPS. Please contact the author, and ask him to make this available using HTTPS"
+        },
+        {
+          "label":"آماده ضبط پیام وضعیت است",
+          "default":"Press a button below to record your answer."
+        },
+        {
+          "label":"پیام وضعیت را ضبط کنید",
+          "default":"Recording..."
+        },
+        {
+          "label":"پیام وضعیت متوقف می شود",
+          "default":"Recording paused. Press a button to continue recording."
+        },
+        {
+          "label":"ضبط پیام وضعیت به پایان رسید",
+          "default":"You have successfully recorded your answer! Listen to the recording below."
+        },
+        {
+          "label":"پیام دانلود ثبت نام",
+          "default":"Download this recording or retry."
+        },
+        {
+          "label":"پیامک ، شروع گفتگو را دوباره امتحان کنید",
+          "default":"Retry recording?"
+        },
+        {
+          "label":"گفتگوی مجدد متن را امتحان کنید",
+          "default":"By pressing \"Retry\" you will lose your current recording."
+        },
+        {
+          "label":"گفتگوی تلاش مجدد متن را تأیید کنید",
+          "default":"Retry"
+        },
+        {
+          "label":"گفتگوی متن لغو تلاش مجدد",
+          "default":"Cancel"
+        },
+        {
+          "label":"رسالة حالة لا يمكن انشاء ملف صوتي",
+          "default":"Can't create the audio file."
+        }
+      ]
+    }
+  ]
+}

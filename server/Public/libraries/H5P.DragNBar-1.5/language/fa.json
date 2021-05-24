@@ -1,0 +1,17 @@
+{
+  "libraryStrings": {
+    "transformLabel": "تبدیل",
+    "editLabel": "ویرایش",
+    "removeLabel": "حذف",
+    "bringToFrontLabel": "به پیش زمینه",
+    "sendToBackLabel": "ارسال به برگشت",
+    "unableToPaste": "نمی توان این شی را چسباند. متأسفانه ، شیئی که می خواهید جای گذاری کنید توسط این نوع محتوا یا نسخه پشتیبانی نمی شود.",
+    "sizeLabel": "اندازه",
+    "positionLabel": "موقعیت",
+    "heightLabel": "ارتفاع",
+    "widthLabel": "عرض",
+    "copyLabel": "کپی",
+    "paste": "چسباندن",
+    "moreElements": "عناصر بیشتر"
+  }
+}

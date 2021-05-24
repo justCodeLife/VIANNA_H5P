@@ -1,0 +1,115 @@
+{
+  "semantics": [
+    {
+      "label": "شرح فعالیت"
+    },
+    {
+      "widgets": [
+        {
+          "label": "فرضی"
+        }
+      ],
+      "label": "کارتها",
+      "entity": "کارت",
+      "field": {
+        "label": "کارت",
+        "fields": [
+          {
+            "label": "سؤال",
+            "description": "سوال متن برای کارت اختیاری است. (یک کارت ممکن است فقط از یک تصویر ، فقط متن یا هر دو استفاده کند)"
+          },
+          {
+            "label": "جواب",
+            "description": "پاسخ برای کارت اختیاری است (راه حل)."
+          },
+          {
+            "label": "عکس",
+            "description": "تصویر برای کارت اختیاری است. (یک کارت ممکن است فقط از یک تصویر ، فقط متن یا هر دو استفاده کند)"
+          },
+          {
+            "label": "متن جایگزین برای تصویر"
+          },
+          {
+            "label": "اشاره",
+            "fields": [
+              {
+                "label": "اشاره متن"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "متن پیشرفت",
+      "default": "Card @card of @total",
+      "description": "متن پیشرفت و متغیرهای موجود: Card و Total. مثال: کارت از همه "
+    },
+    {
+      "label": "متن دکمه بعدی",
+      "default": "Next"
+    },
+    {
+      "label": "متن دکمه قبلی",
+      "default": "Previous"
+    },
+    {
+      "label": "متن دکمه بررسی پاسخ ها ",
+      "default": "Check"
+    },
+    {
+      "label": "قبل از ارائه راه حل ، به درخواست ورودی کاربر پاسخ داده می شود"
+    },
+    {
+      "label": "متن برای قسمت ورودی پاسخ",
+      "default": "Your answer"
+    },
+    {
+      "label": "متن برای پاسخ درست",
+      "default": "Correct"
+    },
+    {
+      "label": "متن برای پاسخ نادرست",
+      "default": "Incorrect"
+    },
+    {
+      "label": "نمایش متن راه حل",
+      "default": "Correct answer"
+    },
+    {
+      "label": "متن برای عنوان نتایج",
+      "default": "Results"
+    },
+    {
+      "label": "متن را برای تعداد صحیح ارسال کنید",
+      "default": "@score of @total correct",
+      "description": "متن نتیجه ، متغیرهای موجود:score وtotal. مثال: 'score oftotal correct'"
+    },
+    {
+      "label": "متن برای نمایش نتایج",
+      "default": "Show results"
+    },
+    {
+      "label": "متن برای برچسب پاسخ کوتاه",
+      "default": "A:"
+    },
+    {
+      "label": "متن برای \"تلاش مجدد\" دکمه",
+      "default": "Retry"
+    },
+    {
+      "label": "حساس به حروف بزرگ",
+      "description": "اطمینان حاصل کنید که ورودی کاربر باید دقیقاً همان جواب باشد."
+    },
+    {
+      "label": "متن نادرست برای فن آوری های کمکی",
+      "default": "Incorrect answer. Correct answer was @answer",
+      "description": "متنی که به فناوری های کمکی اعلام خواهد شد. از @answer به عنوان متغیر استفاده کنید."
+    },
+    {
+      "label": "تغییر کارت برای فناوری های کمکی",
+      "default": "Page @current of @total",
+      "description": "متنی که هنگام پیمایش بین کارتها به فناوریهای کمکی اعلام خواهد شد. از @current و @total به عنوان متغیر استفاده کنید."
+    }
+  ]
+}

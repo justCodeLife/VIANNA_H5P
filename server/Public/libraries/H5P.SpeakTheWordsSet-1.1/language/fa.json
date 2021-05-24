@@ -1,0 +1,106 @@
+{
+  "semantics": [
+    {
+      "label": "معرفی",
+      "fields": [
+        {
+          "label": "معرفی ارائه"
+        },
+        {
+          "label": "معرفی تصویر"
+        },
+        {
+          "label": "متن جایگزین برای تصویر پیش زمینه"
+        },
+        {
+          "label": "عنوان"
+        },
+        {
+          "label": "متن مقدمه",
+          "description": "این عنوان در بالای متن مقدمه نمایش داده می شود."
+        }
+      ]
+    },
+    {
+      "label": "سوالات",
+      "widgets": [
+        {
+          "label": "فرضی"
+        }
+      ],
+      "entity": "Question",
+      "field": {
+        "label": "سؤال"
+      }
+    },
+    {
+      "label": "واکنش کلی ",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "فرضی"
+            }
+          ],
+          "label": "یادداشت های سفارشی را برای هر قسمت نمره ای تعریف کنید",
+          "description": "انقر زر \" اضافة مجال \" برای اضافه کردن هرچه بیشتر زمینه ها ، به عنوان مثال. : 0-20% Bad score, 21-91% Average Score, 91-100% Great Score!",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "فیلد نقطه ای"
+              },
+              {},
+              {
+                "label": "بازخورد میدانی برای نقاط خاص",
+                "placeholder": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "برچسب ها و متن های مجموعه کلمات را بگویید",
+      "fields": [
+        {
+          "label": "بنر دکمه معرفی",
+          "default": "Start Course!"
+        },
+        {
+          "label": "پوستر نتایج صفحه نمایش",
+          "default": "Your results:"
+        },
+        {
+          "label": "دکمه بنر راه حل هایی را نشان می دهد",
+          "default": "Show solution"
+        },
+        {
+          "label": "تغییر نام دکمه امتحان مجدد",
+          "default": "Retry"
+        },
+        {
+          "label": "سوال بعدی",
+          "default": "Next question"
+        },
+        {
+          "label": "سوال قبلی",
+          "default": "Previous question"
+        },
+        {
+          "label": "عنوان نوار پیمایش",
+          "description": "عناوین سوالات در نوار پیمایش. \":num\" با شماره واقعی اسلاید جایگزین می شود.",
+          "default": "اسلاید :num"
+        },
+        {
+          "label": "علامت پیوند به اسلایدی که رسیده است",
+          "default": "Answered"
+        },
+        {
+          "label": "دسترسی به بنر به اسلاید فعال",
+          "default": "Currently active"
+        }
+      ]
+    }
+  ]
+}

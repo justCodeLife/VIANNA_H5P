@@ -1,0 +1,31 @@
+{
+  "semantics": [
+    {
+      "label": "نشانی"
+    },
+    {
+      "fields": [
+        {
+          "label": "پروتکل",
+          "options": [
+            {
+              "label": "http://"
+            },
+            {
+              "label": "https://"
+            },
+            {
+              "label": "(root relative)"
+            },
+            {
+              "label": "دیگر"
+            }
+          ]
+        },
+        {
+          "label": "ارتباط دادن"
+        }
+      ]
+    }
+  ]
+}

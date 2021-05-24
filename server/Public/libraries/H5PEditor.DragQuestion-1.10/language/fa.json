@@ -1,0 +1,16 @@
+{
+  "libraryStrings": {
+    "insertElement": "افزودن :type",
+    "done": "تایید",
+    "remove": "حذف",
+    "image": "تصویر",
+    "text": "متن",
+    "noTaskSize": "لطفا اندازه تسک را مشخص کنید",
+    "confirmRemoval": "آیا از حذف اطمینان دارید؟",
+    "backgroundOpacityOverridden": "شفافیت پس زمینه نادیده گرفته شده است",
+    "advancedtext": "متن",
+    "dropzone": "Drop Zone",
+    "selectAll": "انتخاب همه",
+    "deselectAll": "لغو انتخاب همه"
+  }
+}

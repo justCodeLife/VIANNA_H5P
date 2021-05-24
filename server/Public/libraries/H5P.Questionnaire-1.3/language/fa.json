@@ -1,0 +1,103 @@
+{
+  "semantics": [
+    {
+      "label": "عناصر پرسشنامه",
+      "widgets": [
+        {
+          "label": "پیش فرض"
+        }
+      ],
+      "entity": "عنصر",
+      "field": {
+        "label": "کتابخانه را انتخاب کنید",
+        "fields": [
+          {
+            "label": "کتابخانه",
+            "description": "کتابخانه را انتخاب کنید"
+          },
+          {
+            "label": "فیلد اجباری است"
+          }
+        ]
+      }
+    },
+    {
+      "label": "گزینه های صفحه موفقیت",
+      "fields": [
+        {
+          "label": "فعال سازی صفحه موفقیت"
+        },
+        {
+          "label": "افزودن تصویر صفحه موفقیت",
+          "fields": [
+            {
+              "label": "جایگزین کردن نماد صفحه موفقیت با تصویر"
+            }
+          ]
+        },
+        {
+          "label": "متن برای نمایش در هنگام ارسال",
+          "default": "شما پرسشنامه را تکمیل کرده اید."
+        }
+      ]
+    },
+    {
+      "label": "UI عناصر",
+      "fields": [
+        {
+          "label": "برچسب های دکمه ها",
+          "fields": [
+            {
+              "label": "برچسب دکمه قبلی",
+              "default": "Back"
+            },
+            {
+              "label": "برچسب دکمه ادامه",
+              "default": "Continue"
+            },
+            {
+              "label": "برچسب دکمه بعدی",
+              "default": "Next"
+            },
+            {
+              "label": "برچسب دکمه ارسال",
+              "default": "Submit"
+            }
+          ]
+        },
+        {
+          "label": "دسترسی",
+          "fields": [
+            {
+              "label": "برچسب دکمه خروج پیام مورد نیاز",
+              "default": "Close error message"
+            },
+            {
+              "label": "متن نوار پیشرفت",
+              "default": "Question %current of %max",
+              "description": "استفاده می شود برای گفتن فن آوری های کمکی این سوال است. متغیرها: [ %current, %max ]"
+            }
+          ]
+        },
+        {
+          "label": "متن اجباری است",
+          "default": "This question requires an answer",
+          "description": "اگر این قسمت بی پاسخ باشد و مورد نیاز نوع محتوای بسته بندی باشد ، نمایش داده می شود"
+        },
+        {
+          "label": "متن علامیت اجباری است",
+          "default": "required",
+          "description": "متنی که با علامت ستاره همراه است و نشان می دهد یک سوال لازم است"
+        },
+        {
+          "label": "عنوان برای صفحه ارسال",
+          "default": "You successfully answered all of the questions"
+        },
+        {
+          "label": "زیرنویس برای صفحه ارسال",
+          "default": "Click below to submit your answers"
+        }
+      ]
+    }
+  ]
+}

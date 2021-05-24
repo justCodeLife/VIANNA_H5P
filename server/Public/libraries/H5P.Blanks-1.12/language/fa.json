@@ -1,0 +1,211 @@
+{
+  "semantics": [
+    {
+      "label": "رسانه ها",
+      "fields": [
+        {
+          "label": "نوع",
+          "description": "آرگومان های اختیاری برای نمایش در بالای سوال."
+        },
+        {
+          "label": "بزرگنمایی تصویر را برای تصویر سوال غیرفعال کنید"
+        }
+      ]
+    },
+    {
+      "label": "شرح فعالیت",
+      "default": "Fill in the missing words",
+      "description": "راهنمایی که به کاربر می گوید چگونه به این فعالیت پاسخ دهد."
+    },
+    {
+      "label": "بلوک های متنی",
+      "entity": "text block",
+      "field": {
+        "label": "خط متن",
+        "placeholder": "Oslo is the capital of *Norway*.",
+        "description": "",
+        "important": {
+          "description": "<ul><li>فضاها با ستاره (*) در مقابل و پشت کلمه / عبارت صحیح اضافه می شوند.</li><li>پاسخ های جایگزین با یک برش رو به جلو جدا می شوند (/).</li><li>می توانید با استفاده از دو نقطه (:) در مقابل نکته ، یک اشاره متن اضافه کنید.</li></ul>",
+          "example": "H5P content may be edited using a *browser/web-browser:Something you use every day*."
+        }
+      }
+    },
+    {
+      "label": "یادداشت های جامع",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "فرضی"
+            }
+          ],
+          "label": "یادداشت های سفارشی را برای هر قسمت نتیجه مشخص کنید",
+          "description": "روی دکمه افزودن دامنه کلیک کنید تا هرچه بیشتر دامنه اضافه کنید. مثال: 0-20٪ نتیجه بد ، 21-91٪ امتیاز متوسط، 91-100٪ امتیاز عالی!",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "فیلد امتیاز"
+              },
+              {},
+              {
+                "label": "مشاهدات برای یک منطقه نتیجه خاص",
+                "placeholder": "Fill in the feedback"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "متن برای \" نمایش راه حل \"",
+      "default": "Show solution"
+    },
+    {
+      "label": "متن برای \" تلاش مجدد \"",
+      "default": "Retry"
+    },
+    {
+      "label": "متن برای \" بررسی \"",
+      "default": "Check"
+    },
+    {
+      "label": "متن پیام \" پر نشده استا \" ",
+      "default": "Please fill in all blanks to view solution"
+    },
+    {
+      "label": "متن پیام \" جواب درست است \"",
+      "default": "':ans' is correct"
+    },
+    {
+      "label": "متن پیام \" جواب غلط است \"",
+      "default": "':ans' is wrong"
+    },
+    {
+      "label": "متن پیام \" درست جواب داد \"",
+      "default": "Answered correctly"
+    },
+    {
+      "label": "متن پیام \" اشتباه جواب داده\"",
+      "default": "Answered incorrectly"
+    },
+    {
+      "label": "فن آوری های کمکی برای راه حل امضا می کنند",
+      "default": "Correct answer:"
+    },
+    {
+      "label": "فناوری های کمکی برای قسمت ورودی علامت گذاری می کنند",
+      "description": "Use @num and @total to replace current cloze number and total cloze number",
+      "default": "Blank input @num of @total"
+    },
+    {
+      "label": "فناوری های کمکی علامت گذاری می کنند که می گوید ورودی اشاره ای به آن دارد ",
+      "default": "Tip available"
+    },
+    {
+      "label": "بنر آیکون اشاره",
+      "default": "Tip"
+    },
+    {
+      "label": "تنظیمات رفتاری",
+      "description": "این گزینه ها به شما امکان می دهد نحوه رفتار را کنترل کنید.",
+      "fields": [
+        {
+          "label": "فعال کردن \" تلاش مجدد\""
+        },
+        {
+          "label": "فعال کردن \" نمایش راه حل \""
+        },
+        {
+          "label": "فعال کردن \" بررسی \""
+        },
+        {
+          "label": "پاسخ ها را پس از ورود خودکار بررسی کنید"
+        },
+        {
+          "label": "حساسیت مورد",
+          "description": "اطمینان حاصل کنید که ورودی کاربر باید دقیقاً همان جواب را داشته باشد."
+        },
+        {
+          "label": "قبل از ارائه راه حل ، به همه زمینه ها پاسخ دهید"
+        },
+        {
+          "label": "قسمتهای ورودی را روی خطوط جداگانه قرار دهید"
+        },
+        {
+          "label": "نمایش گفتگوی تأیید  \"بررسی \" ",
+          "description": "این گزینه ها با گزینه تأیید خودکار پاسخ ها پس از ورودی سازگار نیستند"
+        },
+        {
+            "label": "نمایش گفتگوی تأیید \" تلاش مجدد\""
+        },
+        {
+          "label": "غلط املایی جزئی را بپذیرید",
+          "description": "اگر فعال باشد ، پاسخ صحیح را با غلط املایی جزئی نیز محاسبه می کند"
+        }
+      ]
+    },
+    {
+      "label": "گفتگوی تأیید را بررسی کنید",
+      "fields": [
+        {
+          "label": "متن سربرگ",
+          "default": "Finish ?"
+        },
+        {
+          "label": "متن اصلی",
+          "default": "Are you sure you wish to finish ?"
+        },
+        {
+          "label": "علامت دکمه لغو",
+          "default": "Cancel"
+        },
+        {
+          "label": "دکمه تأیید بنر",
+          "default": "Finish"
+        }
+      ]
+    },
+    {
+      "label": "گفتگوی تأیید را دوباره امتحان کنید",
+      "fields": [
+        {
+          "label": "متن سربرگ",
+          "default": "Retry ?"
+        },
+        {
+          "label": "متن اصلی",
+          "default": "Are you sure you wish to retry ?"
+        },
+        {
+          "label": "علامت دکمه لغو",
+          "default": "Cancel"
+        },
+        {
+          "label": "دکمه تأیید بنر",
+          "default": "Confirm"
+        }
+      ]
+    },
+    {
+      "label": "نمایش متن نوار نمره برای کسانی که از فناوری تبدیل متن به گفتار استفاده می کنند",
+      "default": "You got :num out of :total points"
+    },
+    {
+      "label": "Assistive technology description for \"Check\" button",
+      "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+    },
+    {
+      "label": "Assistive technology description for \"Show Solution\" button",
+      "default": "Show the solution. The task will be marked with its correct solution."
+    },
+    {
+      "label": "Assistive technology description for \"Retry\" button",
+      "default": "Retry the task. Reset all responses and start the task over again."
+    },
+    {
+      "label": "Assistive technology description for starting task",
+      "default": "Checking mode"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "semantics": [
+    {
+      "label": "جلد کتاب را فعال کنید",
+      "description": "جلدی که اطلاعات مربوط به کتاب را قبل از ورود نمایش می دهد"
+    },
+    {
+      "label": "جلد",
+      "fields": [
+        {
+          "label": "توضیحات جلد",
+          "description": "این متن شرح کتاب شما خواهد بود."
+        },
+        {
+          "label": "عکس روی جلد",
+          "description": "تصویر پس زمینه اختیاری برای پیش زمینه."
+        },
+        {
+          "label": "متن جلد تصویر جلد",
+          "description": "متن جایگزین برای عکس روی جلد"
+        }
+      ]
+    },
+    {
+      "label": "فصل ها",
+      "entity": "فصل",
+      "widgets": [
+        {
+          "label": "فرضی"
+        }
+      ],
+      "field": {
+        "label": "عنصر",
+        "fields": [
+          {
+            "label": "فصل"
+          }
+        ]
+      }
+    },
+    {
+      "label": "تنظیمات رفتاری",
+      "fields": [
+        {
+          "label": "فهرست مطالب را به عنوان پیش فرض نشان دهید",
+          "description": "هنگام فعال شدن ، هنگام باز شدن کتاب ، فهرست مطالب نمایش داده می شود"
+        },
+        {
+          "label": "مشاهده شاخص های پیشرفت",
+          "description": "وقتی فعال شد ، نشانگرهایی در هر صفحه ظاهر می شوند که نشان می دهد کاربر صفحه را تمام کرده است یا نه."
+        },
+        {
+          "label": "پیشروی خودکار را فعال کنید",
+          "description": "در صورت فعال بودن ، صفحه هنگام مشاهده بیکار در نظر گرفته می شود. صفحه ای با تکمیل تمام وظایف. در صورت غیرفعال بودن ، در پایین هر صفحه یک دکمه وجود دارد که کاربر می تواند پس از اتمام صفحه بر روی آن کلیک کند."
+        },
+        {
+          "label": "نمایش خلاصه",
+          "description": "در صورت فعال شدن کاربر می تواند خلاصه ای را مشاهده کند و پیشرفت / پاسخ ها را ارسال کند"
+        }
+      ]
+    },
+    {
+        "label": "ترجمة تتعلق بـ \"القراءاة\"",
+      "default": "القراءاة"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"مشاهده 'فهرست مطالب'\"",
+      "default": "مشاهده 'فهرست مطالب'"
+    },
+    {
+        "label": "ترجمة تتعلق بـ \"پنهان شدن 'فهرست مطالب'\"",
+      "default": "پنهان شدن 'فهرست مطالب'"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"صفحه بعدی\"",
+      "default": "صفحه بعدی"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"صفحه قبلی\"",
+      "default": "صفحه قبلی"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"انتهای فصل!\"",
+      "default": "انتهای فصل!"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"@pages من @total منتهي\" (@pages و @total سيتم استبدال القيم الفعلية)",
+      "default": "@pages من @total منتهي"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"فصل ناتمام\"",
+      "default": "فصل ناتمام"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"رفت به بعدی\"",
+      "default": "رفت به بعدی"
+    },
+    {
+      "label": "ترجمة تتعلق بـ \"أنهيت هذه الصفحة\"",
+      "default": "أنهيت هذه الصفحة"
+    },
+    {
+      "label": "تمام صفحه",
+      "default": "تمام صفحه"
+    },
+    {
+      "label": "خروج از تمام صفحه",
+      "default": "خروج از تمام صفحه"
+    },
+    {
+      "label": "پیشرفت صفحه در کتاب",
+      "description": "\"@count\" will be replaced by page count, and \"@total\" with the total number of pages",
+      "default": "@count of @total pages"
+    },
+    {
+      "label": "پیشرفت تعامل",
+      "description": "\"@count\" will be replaced by interaction count, and \"@total\" with the total number of interactions",
+      "default": "@count of @total interactions"
+    },
+    {
+      "label": "ترجمه برای \"گزارش ثبت\"",
+      "default": "گزارش ثبت"
+    },
+    {
+      "label": "برچسب برای \"راه اندازی مجدد\" دکمه",
+      "default": "راه اندازی مجدد"
+    },
+    {
+      "label": "سربرگ خلاصه",
+      "default": "خلاصه"
+    },
+    {
+      "label": "ترجمه برای \"همه تعامل ها\"",
+      "default": "همه تعامل ها"
+    },
+    {
+      "label": "ترجمه برای \"تعامل های پاسخ داده نشده\"",
+      "default": "تعامل های پاسخ داده نشده"
+    },
+    {
+      "label": "امتیاز",
+      "description": "\"@score\" will be replaced with current score, and \"@maxscore\" will be replaced with max achievable score",
+      "default": "@score / @maxscore"
+    },
+    {
+      "label": "تکمیل تعاملات صفحه در هر صفحه",
+      "description": "\"@left\" will be replaced with remaining interactions, and \"@max\" will be replaced with total number of interactions on the page",
+      "default": "@left of @max interactions completed"
+    },
+    {
+      "label": "ترجمه برای \"هیچ تعاملی یافت نشد\"",
+      "default": "هیچ تعاملی یافت نشد"
+    },
+    {
+      "label": "ترجمه برای \"امتیاز\"",
+      "default": "امتیاز"
+    },
+    {
+      "label": "برچسب برای \"خلاصه و ثبت\" دکمه",
+      "default": "خلاصه و ثبت"
+    },
+    {
+      "label": "ترجمه برای 'شما با هیچ صفحه ای تعامل نداشته اید.'",
+      "default": "You have not interacted with any pages."
+    },
+    {
+      "label": "ترجمه برای 'قبل از دیدن خلاصه باید حداقل با یک صفحه تعامل داشته باشید.'",
+      "default": "You have to interact with at least one page before you can see the summary."
+    },
+    {
+      "label": "ترجمه برای 'پاسخ های شما برای بررسی ارسال می شود!'",
+      "default": "Your answers are submitted for review!"
+    },
+    {
+      "label": "برچسب خلاصه پیشرفت",
+      "default": "Book progress"
+    },
+    {
+      "label": "برچسب پیشرفت تعاملات",
+      "default": "Interactions progress"
+    },
+    {
+      "label": "برچسب نمره کل",
+      "default": "Total score"
+    },
+    {
+      "label": "دسترسی به متن ها",
+      "fields": [
+        {
+          "label": "صفحه متن جایگزین ارائه می دهد",
+          "description": "متن جایگزین برای پیشرفت در صفحه قابل مشاهده. page ،total و متغیرهای موجود.",
+          "default": "صفحة @page از @total."
+        },
+        {
+          "label": "علامت گذاری کنید تا منوی پیمایش را گسترش / کوچک کنید",
+          "default": "ضامن منوی پیمایش"
+        }
+      ]
+    }
+  ]
+}

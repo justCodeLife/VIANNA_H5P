@@ -1,0 +1,385 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "field": {
+            "fields": [
+              {
+                "field": {
+                  "fields": [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                      "label": "نظرات",
+                      "description": "نظرات زمانی که کاربر پاسخ های پیشنهاد شده برای همه اسلاید هارا می بیند نمایش داده می شوند"
+                    },
+                    {
+                      "label": "نمایش همیشگی نظرات"
+                    },
+                    {
+                      "label": "شفافیت پس زمینه"
+                    },
+                    {
+                      "label": "نمایش به عنوان دکمه"
+                    },
+                    {
+                      "label": "اندازه دکمه",
+                      "options": [
+                        {
+                          "label": "کوچک"
+                        },
+                        {
+                          "label": "بزرگ"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "عنوان"
+                    },
+                    {
+                      "label": "برو به",
+                      "options": [
+                        {
+                          "label": "شماره اسلاید خاص"
+                        },
+                        {
+                          "label": "اسلاید بعدی"
+                        },
+                        {
+                          "label": "اسلاید قبلی"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "شماره اسلاید خاص",
+                      "description": "شماره اسلاید را برای رفتن وارد کنید"
+                    },
+                    {
+                      "label": "پنهان",
+                      "description": "نشان گر پیشفرض - بدون عنوان و بدون اندیس تب. هشدار : کاربران بدون دسترسی یا کاربران با دسترسی فقط به صفحه کلید در استفاده از این فیلد با مشکل مواجه می شوند"
+                    }
+                  ]
+                }
+              },
+              {},
+              {
+                "fields": [
+                  {
+                    "label": "تصویر",
+                    "description": "تصویر پس زمینه باید برای جلوگیری از کشیدگی دارای نسبت عرض به ارتفاع 2:1 باشد.تصاویر دارای رزولوشن بالا در صفحه نمایش های بزرگتر بهتر دیده می شوند"
+                  },
+                  {
+                    "label": "انتخاب رنگ",
+                    "default": ""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "لیست کلیدواژه"
+        },
+        {
+          "label": "نمایش همیشگی"
+        },
+        {
+          "label": "پنهان سازی خودکار"
+        },
+        {
+          "label": "شفافیت"
+        },
+        {
+          "fields": [
+            {
+              "label": "تصویر",
+              "description": "تصویر پس زمینه باید برای جلوگیری از کشیدگی دارای نسبت عرض به ارتفاع 2:1 باشد.تصاویر دارای رزولوشن بالا در صفحه نمایش های بزرگتر بهتر دیده می شوند"
+            },
+            {
+              "label": "انتخاب رنگ",
+              "default": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ترجمه",
+      "fields": [
+        {
+          "label": "ترجمه برای \"اسلاید\"",
+          "default": "Slide"
+        },
+        {
+          "label": "ترجمه برای \"امتیاز\"",
+          "default": "Score"
+        },
+        {
+          "label": "ترجمه برای \"امتیاز شما\"",
+          "default": "Your Score"
+        },
+        {
+          "label": "ترجمه برای \"حداکثر امتیاز\"",
+          "default": "Max Score"
+        },
+        {
+          "label": "ترجمه برای \"مجموع\"",
+          "default": "Total"
+        },
+        {
+          "label": "ترجمه برای \"مجموع امتیاز\"",
+          "default": "Total Score"
+        },
+        {
+          "label": "عنوان برای نمایش دکمه راه حل ها",
+          "default": "Show solutions"
+        },
+        {
+          "label": "متن برای دکمه تلاش مجدد",
+          "default": "Retry"
+        },
+        {
+          "label": "متن برای دکمه استخراج متن",
+          "default": "Export text"
+        },
+        {
+          "label": "مخفی سازی عنوان دکمه لیست کلیدواژه ها",
+          "default": "Hide keywords list"
+        },
+        {
+          "label": "نمایش عنوان دکمه لیست کلید واژه ها",
+          "default": "Show keywords list"
+        },
+        {
+          "label": "برچسب ورود به حالت تمام صفحه",
+          "default": "Fullscreen"
+        },
+        {
+          "label": "برچسب خروج از حالت تمام صفحه",
+          "default": "Exit fullscreen"
+        },
+        {
+          "label": "برچسب اسلاید قبلی",
+          "default": "Previous slide"
+        },
+        {
+          "label": "برچسب اسلاید بعدی",
+          "default": "Next slide"
+        },
+        {
+          "label": "برچسب اسلاید کنونی",
+          "default": "Current slide"
+        },
+        {
+          "label": "برچسب اسلاید آخر",
+          "default": "Last slide"
+        },
+        {
+          "label": "متن خروج از حالت راه حل",
+          "default": "Exit solution mode"
+        },
+        {
+          "label": "متن ورود به حالت راه حل",
+          "default": "Solution Mode"
+        },
+        {
+          "label": "متن برای زمانی چندین کار در صفحه وجود دارد",
+          "default": "Multiple tasks"
+        },
+        {
+          "label": "متن پیام امتیاز",
+          "default": "You achieved:"
+        },
+        {
+          "label": "متن اشتراک در فیس بوک",
+          "default": "Share on Facebook"
+        },
+        {
+          "label": "متن اشتراک در توییتر",
+          "default": "Share on Twitter"
+        },
+        {
+          "label": "متن اشتراک در گوگل",
+          "default": "Share on Google+"
+        },
+        {
+          "label": "عنوان اسلاید خلاصه",
+          "default": "Summary"
+        },
+        {
+          "label": "عنوان آیکون نظرات",
+          "default": "Show comments"
+        },
+        {
+          "label": "عنوان دکمه چاپ",
+          "default": "Print"
+        },
+        {
+          "label": "متن دیالوگ چاپ",
+          "default": "How would you like to print this presentation?"
+        },
+        {
+          "label": "برچسب دکمه 'چاپ همه اسلایدها'",
+          "default": "Print all slides"
+        },
+        {
+          "label": "برچسب دکمه 'چاپ اسلاید فعلی'",
+          "default": "Print current slide"
+        },
+        {
+          "label": "برچسب اسلایدهای بدون عنوان",
+          "default": "No title"
+        },
+        {
+          "label": "توضیح ناوبری اسلاید برای فن آوری های کمکی",
+          "default": "Use left and right arrow to change slide in that direction whenever canvas is selected"
+        },
+        {
+          "label": "برچسب بوم برای فناوری های کمکی",
+          "default": "Presentation canvas. Use left and right arrow to move between slides."
+        },
+        {
+          "label": "برچسب تعاملات ناتمام",
+          "default": "@slideName contains not completed interaction"
+        },
+        {
+          "label": "برچسب تعاملات کامل",
+          "default": "@slideName contains completed interaction"
+        },
+        {
+          "label": "برچسب شمارنده اسلاید.متغیر ها @index, @total هستند",
+          "default": "Slide @index of @total"
+        },
+        {
+          "label": "برچسبی برای اسلایدها که فقط شامل پاسخ های صحیح است",
+          "default": "@slideName only has correct answers"
+        },
+        {
+          "label": "برچسب اسلایدهایی که پاسخ نادرستی دارند",
+          "default": "@slideName has incorrect answers"
+        },
+        {
+          "label": "برچسب نوار اشتراک گزاری اجتماعی",
+          "default": "Share Result"
+        },
+        {
+          "label": "اعلام نمره کل برای فناوری های کمکی",
+          "default": "You got @score of @maxScore points in total",
+          "description": "متغیر های دردسترس @score و @maxScore هستند"
+        },
+        {
+          "label": "برای فناوری های کمکی وارد اطلاعیه تمام صفحه شد",
+          "default": "Entered fullscreen"
+        },
+        {
+          "label": "اعلامیه تمام صفحه برای فناوری های کمکی خارج شد",
+          "default": "Exited fullscreen"
+        }
+      ]
+    },
+    {
+      "label": "تنظیمات رفتاری",
+      "description": "این گزینه ها به شما امکان می دهد تنظیمات رفتار را نادیده بگیرید.",
+      "fields": [
+        {
+          "label": "حالت فعال سطح را فعال کنید",
+          "description": "کنترلهای پیمایش را برای کاربر نهایی حذف می کند. برای پیمایش از Go To Slide استفاده کنید."
+        },
+        {
+          "label": "اسلاید خلاصه را پنهان کنید",
+          "description": "اسلاید خلاصه را پنهان می کند."
+        },
+        {
+          "label": "دکمه لغو نمایش راه حل",
+          "description": "این گزینه تعیین می کند که آیا دکمه 'نمایش راه حل' برای همه سوالات نشان داده می شود ، برای همه غیرفعال است یا برای هر سوال به صورت جداگانه پیکربندی شده است.",
+          "options": [
+            {
+              "label": "فعال"
+            },
+            {
+              "label": "غیرفعال"
+            }
+          ]
+        },
+        {
+          "label": "دکمه لغو تلاش مجدد",
+          "description": "این گزینه تعیین می کند که آیا دکمه 'سعی مجدد' برای همه سوالات نشان داده شود ، برای همه غیرفعال باشد یا برای هر سوال به صورت جداگانه پیکربندی شود..",
+          "options": [
+            {
+              "label": "فعال"
+            },
+            {
+              "label": "غیرفعال"
+            }
+          ]
+        },
+        {
+          "label": "نمایش دکمه نمایش راه حل در صفحه خلاصه ها",
+          "description": "در صورت فعال بودن ، زبان آموز می تواند راه حلهای مربوط به همه سالها را هنگامی که به اسلاید خلاصه می رسند نشان دهد"
+        },
+        {
+          "label": "نمایش دکمه تلاش مجدد در صفحه خلاصه ها",
+          "description": "در صورت فعال بودن ، زبان آموز می تواند تمام سوالات را که به اسلاید خلاصه می رسند دوباره امتحان کند. به شما توصیه می شود که با تازه کردن صفحه ، حتی اگر این دکمه نشان داده نشود ، زبان آموزان می توانند دوباره امتحان کنند."
+        },
+        {
+          "label": "دکمه چاپ را فعال کنید",
+          "description": "دکمه چاپ را فعال می کند."
+        },
+        {
+          "label": "تنظیمات اشتراک",
+          "description": "این گزینه ها به شما امکان می دهد تنظیمات رفتار اجتماعی را نادیده بگیرید. اگر پیوندی ارائه شود ، مقادیر خالی به طور خودکار پر می شوند ، در غیر این صورت همه مقادیر تولید می شوند.",
+          "fields": [
+            {
+              "label": "نمایش ایکون اشتراک در فیس بوک"
+            },
+            {
+              "label": "تنظیمات اشتراک فیس بوک",
+              "fields": [
+                {
+                  "label": "لینک اشتراک در فیس بوک",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "نقل قول اشتراک در فیس بوک",
+                  "default": "I scored @score out of @maxScore on a task at @currentpageurl."
+                }
+              ]
+            },
+            {
+              "label": "نمایش ایکون اشتراک توییتر"
+            },
+            {
+              "label": "تنظیمات اشتراک توییتر",
+              "fields": [
+                {
+                  "label": "متن اشتراک در توییتر",
+                  "default": "I scored @score out of @maxScore on a task at @currentpageurl."
+                },
+                {
+                  "label": "لینک اشتراگ گزاری در توییتر",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "هشتگ های اشتراک گزاری در توییتر",
+                  "default": "h5p, course"
+                }
+              ]
+            },
+            {
+              "label": "نمایش ایکون اشتراک گزاری گوگل پلاس"
+            },
+            {
+              "label": "اشتراک گزاری به گوگل لینک",
+              "default": "@currentpageurl"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
