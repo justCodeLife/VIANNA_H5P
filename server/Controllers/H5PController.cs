@@ -51,6 +51,7 @@ namespace vianna_h5p.Controllers
                     });
                 }
 
+                //check and add upgrades.js file
                 string? upgrades = null;
                 if (System.IO.File.Exists(libraryPath + "/upgrades.js"))
                 {
@@ -60,6 +61,7 @@ namespace vianna_h5p.Controllers
                 var cssPaths = new List<string>();
                 var jsPaths = new List<string>();
 
+                //get request library data from DB
                 var library = await Db.QuerySingleAsync<Library>(
                     "select id, semantics, title from libraries where name=@machineName and major_version=@majorVersion and minor_version=@minorVersion",
                     new
@@ -76,6 +78,7 @@ namespace vianna_h5p.Controllers
 
                 dynamic? semantics = library.semantics;
 
+                //check DB for cached assets if exists add them to css and js paths array and if not exists create cache
                 var cache = (await Db.QueryAsync<dynamic>(
                     "select path from cached_assets where cached_type='library' and cached_id=@id", new
                     {
@@ -104,6 +107,7 @@ namespace vianna_h5p.Controllers
                         jsPaths.AddRange(lib.preloadedJs.Split(',').Select(js => js.Trim().Insert(0, depPath)));
                     }
 
+                    //check and add presave.js file
                     if (System.IO.File.Exists(libraryPath + "/presave.js"))
                     {
                         jsPaths.Add(libraryPath + "/presave.js");
@@ -139,6 +143,7 @@ namespace vianna_h5p.Controllers
                     jsPaths = new List<string> {$"/cache/libraries/{machineName}-{majorVersion}.{minorVersion}.min.js"};
                 }
 
+                //get translations from DB
                 var translatedSemantics = await Db.QuerySingleAsync<Translation>(
                     "select translation from translates where code='fa' and library_id=@id", new
                     {
@@ -183,6 +188,7 @@ namespace vianna_h5p.Controllers
             try
             {
                 var libs = new List<dynamic>();
+                //split libraries name by space to get only machineName of them
                 var librariesNames = data.libraries.Select(lib => lib.Split(" ")[0]).ToList();
                 var librarysInfo =
                     await Db.QueryAsync<Library>(
@@ -279,6 +285,7 @@ namespace vianna_h5p.Controllers
                     {
                         code = lang, ids = libraries.Select(lib => lib.id).ToList()
                     })).ToList();
+            //create dictionary of translates in form of key = machineName and value = deserialized json of translation
             return translations
                 .Join(libraries, arg => arg.library_id, arg => arg.id,
                     (first, second) => new {second.machineName, first.translation})

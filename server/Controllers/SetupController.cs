@@ -50,6 +50,7 @@ namespace vianna_h5p.Controllers
                 Environment.SetEnvironmentVariable("DB_PASSWORD", request.password);
                 Environment.SetEnvironmentVariable("IS_INSTALLED", "true");
 
+                //get all variables in .env file as key values
                 var env = (await System.IO.File.ReadAllLinesAsync(_env.ContentRootPath + "/.env"))
                     .Where(x => !x.StartsWith("#") && !string.IsNullOrEmpty(x))
                     .Select(x => x.Split('=')).ToDictionary(x => x[0], x => x[1]);

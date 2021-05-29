@@ -10,7 +10,7 @@ namespace vianna_h5p.Services
 {
     public abstract class CronJob : IHostedService, IDisposable
     {
-        private System.Timers.Timer _timer;
+        private Timer _timer;
         private readonly CronExpression _expression;
         private readonly TimeZoneInfo _timeZoneInfo;
 

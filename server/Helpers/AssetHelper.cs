@@ -10,6 +10,7 @@ namespace vianna_h5p.Helpers
 {
     public static class AssetHelper
     {
+        //regex for finding relative urls in css files
         private static readonly Regex RxUrl = new(@"url\s*\(\s*([""']?)([^:)]+)\1\s*\)",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
 

@@ -52,6 +52,7 @@ namespace vianna_h5p.Controllers
                     });
                 }
 
+                //get logged in user contents
                 var contents = Db.Query<Contents>(
                     "select contents.id as id,contents.title as title,contents.created_at as created_at,libraries.name as library_name from contents join libraries on contents.library_id = libraries.id where user_id=@user_id",
                     new {user_id = (int) HttpContext.Items["user_id"]!});
@@ -79,6 +80,7 @@ namespace vianna_h5p.Controllers
                         error = "فایل نامعتبر می باشد"
                     });
                 var randomName = $"{Guid.NewGuid()}{Path.GetExtension(request.file.FileName)}";
+                //insert temp file record to DB (is_draft=1) 
                 await Db.ExecuteAsync(
                     "insert into files (user_id, content_id, type, path, created_at) values (@user_id,@content_id,@type,@path,@date);",
                     new
@@ -193,12 +195,14 @@ namespace vianna_h5p.Controllers
                     return Json(new {error = "محتوای مورد نظر وجود ندارد"});
                 }
 
+                //get main library infos from DB
                 var mainLib = await Db.QuerySingleAsync<Library>(
                     "select name as machineName, title, major_version as majorVersion, minor_version as minorVersion,embed_types from libraries where id=@id",
                     new
                     {
                         id = content.library_id
                     });
+                //get dependency libraries paths from DB
                 var deps = (await Db.QueryAsync<dynamic>(
                     "select path from cached_assets where cached_id=@contentID and cached_type='content'", new
                     {
@@ -347,6 +351,10 @@ namespace vianna_h5p.Controllers
                     });
                 }
 
+                //split library name from request to get machineName
+                // 0 => machineName
+                // 1 => majorVersion
+                // 2 => minorVersion
                 var libraryMachineName = request.library!.Split(" ")[0];
                 var library = await Db.QuerySingleAsync<Library>(
                     "select id from libraries where name=@name and major_version=@majorVersion and minor_version=@minorVersion",
@@ -356,6 +364,7 @@ namespace vianna_h5p.Controllers
                         minorVersion = request.library!.Split(" ")[1].Split(".")[1]
                     });
 //----------------------------------------------------insert content---------------------------------------------------
+                //insert content record and get it's id
                 var contentId = Db.ExecuteScalar<int>(
                     "insert into contents (created_at, user_id, title, library_id, parameters) output inserted.id values (@date,@user_id,@title,@library_id,@parameters)",
                     new
@@ -365,9 +374,11 @@ namespace vianna_h5p.Controllers
                         parameters = request.Params!.RootElement.ToString()
                     });
 //---------------------------------------------------process uploaded file---------------------------------------------
+                //search "path" in request params and get it's value
                 var uploadedFilesPath = request.Params.SelectElements("$..path")
                     .Where(a => a!.Value.ValueKind == JsonValueKind.String).Select(a => a?.GetString())
                     .ToList();
+                //remove website url from them
                 for (var i = 0; i < uploadedFilesPath.Count; i++)
                 {
                     uploadedFilesPath[i] = uploadedFilesPath[i]?.Replace(Env.GetString("WEBSITE_URL"), "");
@@ -393,6 +404,7 @@ namespace vianna_h5p.Controllers
                             $"{contentPath}/{Path.GetFileName(path)}");
                     }
 
+                    //set is_draft=0 for files
                     await Db.ExecuteAsync(
                         "update files set path=@newPath, is_draft=0,content_id=@content_id where path=@prevPath", new
                         {
@@ -410,10 +422,12 @@ namespace vianna_h5p.Controllers
                     parameters = newParams
                 });
 //---------------------------------------------------addons------------------------------------------------------------
+                //search "library" in request params and get value of it to find main library
                 var addons = request.Params.SelectElements("$..library")
                     .Where(a => a!.Value.ValueKind == JsonValueKind.String).Select(a => a?.GetString())
                     .ToList();
                 List<int>? addonsIDs = null;
+                //if addons has any value get their ids from DB 
                 if (addons.Any())
                 {
                     addonsIDs = (List<int>?) await Db.QueryAsync<int>("select id from libraries where name in @names",
@@ -424,6 +438,7 @@ namespace vianna_h5p.Controllers
                 }
 
 //---------------------------------------------------addons------------------------------------------------------------
+                //pass their ids to LibraryDependencies to get their dependencies
                 _preloadedDependencies = LibraryDependencies(library.id);
                 if (addonsIDs != null && addonsIDs.Any())
                 {
@@ -435,6 +450,7 @@ namespace vianna_h5p.Controllers
 
                 _preloadedDependencies = _preloadedDependencies.Distinct().ToList();
 
+                //get data of preloaded dependencies from DB
                 var depLibraries = await Db.QueryAsync<Library>(
                     "select id,name as machineName,major_version as majorVersion,minor_version as minorVersion,preloaded_css as preloadedCss,preloaded_js as preloadedJs from libraries where id in @ids",
                     new
@@ -442,9 +458,12 @@ namespace vianna_h5p.Controllers
                         ids = _preloadedDependencies
                     });
 
+                //order data by ids again
                 depLibraries = depLibraries.OrderBy(lib => _preloadedDependencies.IndexOf(lib.id)).ToList();
                 var cssPaths = new List<string>();
                 var jsPaths = new List<string>();
+
+                //create cache for content
                 foreach (var lib in depLibraries)
                 {
                     string libraryPath =
@@ -546,6 +565,7 @@ namespace vianna_h5p.Controllers
                     });
                 }
 
+                //search "path" in params json and get it's value
                 var uploadedFilesPath = request.Params.SelectElements("$..path")
                     .Where(a => a!.Value.ValueKind == JsonValueKind.String).Select(a => a?.GetString())
                     .ToList();
@@ -557,6 +577,7 @@ namespace vianna_h5p.Controllers
                     Directory.CreateDirectory(userContentPath);
                 }
 
+                //remove website url from paths
                 if (uploadedFilesPath.Any())
                 {
                     for (var i = 0; i < uploadedFilesPath.Count; i++)
@@ -565,6 +586,7 @@ namespace vianna_h5p.Controllers
                     }
 
                     //all files are new
+                    //check paths contains "temp"
                     if (uploadedFilesPath.All(f => f!.Contains("temp")))
                     {
                         //delete all previous files
@@ -577,6 +599,7 @@ namespace vianna_h5p.Controllers
                             System.IO.File.Delete(file);
                         }
 
+                        //move temp files to user folder
                         foreach (var path in uploadedFilesPath)
                         {
                             if (System.IO.File.Exists($"{_env.ContentRootPath}/Public{path}") &&
@@ -666,6 +689,9 @@ namespace vianna_h5p.Controllers
                     }
                 }
 
+                //0 => machineName
+                //1 => majorVersion
+                //2 => minorVersion
                 var newLibrary = await Db.QuerySingleAsync<Library>(
                     "select id from libraries where name=@name and major_version=@majorVersion and minor_version=@minorVersion",
                     new
@@ -685,6 +711,7 @@ namespace vianna_h5p.Controllers
                     new {content.id});
 
 //---------------------------------------addons----------------------------------------------------------
+                //search "library" in params json and get it's value 
                 var addons = request.Params.SelectElements("$..library")
                     .Where(a => a is {ValueKind: JsonValueKind.String}).Select(a => a?.GetString())
                     .ToList();
@@ -709,6 +736,7 @@ namespace vianna_h5p.Controllers
 
                 _preloadedDependencies = _preloadedDependencies.Distinct().ToList();
 
+                //get preloaded dependencies infos from DB
                 var depLibraries = await Db.QueryAsync<Library>(
                     "select id,name as machineName,major_version as majorVersion,minor_version as minorVersion,preloaded_css as preloadedCss,preloaded_js as preloadedJs from libraries where id in @ids",
                     new
@@ -716,9 +744,11 @@ namespace vianna_h5p.Controllers
                         ids = _preloadedDependencies
                     });
 
+                //order libraries by ids again
                 depLibraries = depLibraries.OrderBy(lib => _preloadedDependencies.IndexOf(lib.id)).ToList();
                 var cssPaths = new List<string>();
                 var jsPaths = new List<string>();
+                // create cache for updated content
                 foreach (var lib in depLibraries)
                 {
                     var libraryPath =
@@ -792,6 +822,7 @@ namespace vianna_h5p.Controllers
         {
             try
             {
+                //get content params from DB
                 var content = await Db.QuerySingleAsync(
                     @"select parameters as params,name + ' ' + cast(libraries.major_version as varchar)+ '.' + cast(libraries.minor_version as varchar) as library from contents
                     join libraries on contents.library_id = libraries.id where contents.id=@id",

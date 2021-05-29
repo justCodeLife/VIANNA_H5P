@@ -44,7 +44,7 @@ namespace vianna_h5p
             services.AddCronJob<DeleteTempFiles>(c =>
             {
                 c.TimeZoneInfo = TimeZoneInfo.Local;
-                c.CronExpression = @"* * * * *";
+                c.CronExpression = @"* * * * *"; //run task every hour
             });
         }
 
@@ -58,7 +58,8 @@ namespace vianna_h5p
             app.UseRouting();
             app.UseCors("CORS");
 
-            // app.UseAuthorization();
+            // use jwt middleware in controllers 
+            //or
             // app.UseJWTMiddleware();
             //or
             // app.UseMiddleware(typeof(JWTMiddleware));

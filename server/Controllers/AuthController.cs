@@ -35,6 +35,7 @@ namespace vianna_h5p.Controllers
         {
             try
             {
+                //find user in DB
                 var user = await _db.QuerySingleAsync<User>(
                     "select * from users where username=@username and password=@password",
                     new {request.username, request.password});
@@ -44,6 +45,7 @@ namespace vianna_h5p.Controllers
                         error = "کاربر مورد نظر یافت نشد"
                     });
                 var tokenHandler = new JwtSecurityTokenHandler();
+                //get secret key from environment variables
                 var key = Encoding.ASCII.GetBytes(Env.GetString("JWT_SECRET"));
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
@@ -58,6 +60,7 @@ namespace vianna_h5p.Controllers
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 var cookieOptions = new CookieOptions
                 {
+                    // commented because token should be accessible for js
                     // HttpOnly = true,
                     Expires = DateTime.UtcNow.AddDays(3)
                 };

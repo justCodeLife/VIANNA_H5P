@@ -21,12 +21,14 @@ namespace vianna_h5p.Middlewares
 
         public async Task InvokeAsync(HttpContext context)
         {
+            //get token from header or cookie or query string
             // var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
             var token = context.Request.Cookies["token"] ?? context.Request.Query["token"];
             if (token != null)
             {
                 try
                 {
+                    //get secret key from environment variables and decode jwt from request and get user id from it
                     var tokenHandler = new JwtSecurityTokenHandler();
                     var key = Encoding.ASCII.GetBytes(Env.GetString("JWT_SECRET"));
                     tokenHandler.ValidateToken(token, new TokenValidationParameters
